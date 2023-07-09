@@ -1,0 +1,30 @@
+.addPlayerModal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .addPlayerInput{
+        padding: 7.5px;
+        margin-bottom: 10px;
+    }
+    .addPlayerButton{
+        margin: 5px;
+    }
+    .getPlayersButton{
+        margin: 5px;
+    }
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .greetings h1,
+  .greetings h3 {
+    text-align: left;
+  }
+}
