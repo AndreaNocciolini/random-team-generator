@@ -10,7 +10,7 @@ import '../../assets/TeamList.scss'
     <button class="getPlayersButton" @click="getPlayers">Get Player List</button>
   </div>
   
-  <div v-if=this.players.length >
+  <div v-if=this.players.length>
     <ul class="list">
       <li v-for="(player, i) in players" :key="i">
         {{ player }} <input type="submit" @click="deletePlayer(i)" value="Remove Player" />
