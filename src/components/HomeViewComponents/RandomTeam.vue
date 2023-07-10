@@ -40,8 +40,8 @@ export default {
 
             if (JSON.parse(localStorage.getItem("players")).length >= teamLength) {
                 this.team = [];
-                let player = this.getRandomItem(JSON.parse(localStorage.getItem("players")));
                 for (let index = 0; index < teamLength; index++) {
+                    const player = this.getRandomItem(JSON.parse(localStorage.getItem("players")));
                     this.team.push(player);
                 }
                 localStorage.setItem("team", JSON.stringify(this.team));
