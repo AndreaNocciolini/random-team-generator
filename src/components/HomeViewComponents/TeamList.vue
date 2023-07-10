@@ -12,12 +12,12 @@ import '../../assets/TeamList.scss'
   
   <div v-if=this.players.length>
     <ul class="list">
-      <li v-for="(player, i) in players" :key="i">
-        {{ player }} <input type="submit" @click="deletePlayer(i)" value="Remove Player" />
+      <li v-for="(player, i) in players" :key="i" class="d-flex justify-content-between w-100 m-1">
+        {{ player }} <input type="submit" @click="deletePlayer(i)" value="Remove" />
       </li>
     </ul>
   </div>
-  <div v-else>
+  <div v-else class="d-flex justify-content-center flex-column">
     <h1>Warning: no players saved</h1>
   </div>
 </template>
