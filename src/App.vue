@@ -5,7 +5,7 @@ import '../src/assets/App.scss'
 
 <template>
   <div class="container text-center">
-    <h1 class="text-uppercase fs-1">Random Team Generator</h1>
+    <h1 class="fs-1">Basketball Team Generator</h1>
     <RouterView />
   </div>
 </template>

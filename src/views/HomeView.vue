@@ -5,7 +5,7 @@ import RandomTeam from '../components/HomeViewComponents/RandomTeam.vue'
 
 <template>
   <main>
-    <div class="p-3 d-flex justify-content-center">
+    <div class="p-3 d-flex  justify-content-center">
       <TeamList />
     </div>
     <RandomTeam />

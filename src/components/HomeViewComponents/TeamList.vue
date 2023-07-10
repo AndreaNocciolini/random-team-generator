@@ -4,20 +4,21 @@ import '../../assets/TeamList.scss'
 
 
 <template>
-  <div class="d-flex flex-row justify-content-around w-100">
+  <div class="d-flex flex-md-row flex-column justify-content-around w-100">
     <div class="addPlayerModal">
-      <input class="addPlayerInput" v-model="player" placeholder="Add a new player" /> <br /><br />
-      <input class="addPlayerButton" type="submit" @click="storePlayer" value="Add Player" />
-      <button class="getPlayersButton" @click="getPlayers">Get Player List</button>
+      <input class="addPlayerInputText" v-model="player" placeholder="Add a new player" /> <br /><br />
+      <button class="btn btn-outline-success m-1" @click="storePlayer">Add Player</button>
+      <button class="btn btn-outline-info m-1" @click="getPlayers">Get Player List</button>
     </div>
 
     <div v-if=this.players.length>
       <ul class="list">
-        <b-table striped hover :items="items"></b-table>
-          {{ player }} <input type="submit" @click="deletePlayer(i)" value="Remove" />
+        <li v-for="(player, i) in players" :key="i" class="d-flex align-items-center justify-content-between w-100 pe-3 m-1">
+          {{ player.length > 8 ? player.substring(0,8) + "..." : player }} <button class="btn btn-outline-danger" @click="deletePlayer(i)">Remove</button>
+        </li>
       </ul>
     </div>
-    <div v-else class="d-flex justify-content-center flex-column">
+    <div v-else class="list justify-content-center">
       <h1>Warning: no players saved</h1>
     </div>
   </div>

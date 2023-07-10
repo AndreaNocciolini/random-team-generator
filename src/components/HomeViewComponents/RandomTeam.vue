@@ -6,17 +6,21 @@ import Swal from 'sweetalert2'
 
 <template>
     <div class="addPlayerModal">
-        <button class="getPlayersButton" @click="generateTeam">Generate Random Team</button>
+        <button class="btn btn-info" @click="generateTeam">Generate Random Team</button>
     </div>
 
-    <div v-if=this.team.length>
-        <ul class="list">
-            <li v-for="(player, i) in team" :key="i">
-                {{ player }}
+    <div v-if=this.team.length class="mb-5">
+        <ul class="list-group align-items-center list-group-numbered">
+            <li v-for="(player, i) in team" :key="i"
+                class="list-group-item d-flex justify-content-between align-items-start w-75">
+                <div class="ms-2 me-auto">
+                    <div class="text-start text-danger">{{ player }}</div>
+                    can be: point guard, shooting guard, power foward, center or small foward
+                </div>
             </li>
         </ul>
     </div>
-    <div v-else>
+    <div v-else class="mb-5">
         <h1>Click the button to generate a random team</h1>
     </div>
 </template>
