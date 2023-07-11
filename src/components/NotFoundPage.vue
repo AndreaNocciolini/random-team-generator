@@ -1,5 +1,5 @@
 <script setup>
-import '../assets/NotFoundPage.scss'
+import '../assets/components/NotFoundPage.scss'
 </script>
 
 

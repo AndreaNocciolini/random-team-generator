@@ -1,5 +1,5 @@
 <script setup>
-import '../../assets/TeamList.scss'
+import '../../assets/components/TeamList.scss'
 import Swal from 'sweetalert2'
 </script>
 

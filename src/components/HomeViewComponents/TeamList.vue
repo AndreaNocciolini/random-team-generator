@@ -1,5 +1,5 @@
 <script setup>
-import '../../assets/TeamList.scss'
+import '../../assets/components/TeamList.scss'
 </script>
 
 
@@ -11,7 +11,7 @@ import '../../assets/TeamList.scss'
       <button class="btn btn-outline-info m-1" @click="getPlayers">Get Player List</button>
     </div>
 
-    <div v-if=this.players.length>
+    <div v-if=this.players.length class="list justify-content-center">
       <ul class="list">
         <li v-for="(player, i) in players" :key="i" class="d-flex align-items-center justify-content-between w-100 pe-3 m-1">
           {{ player.length > 8 ? player.substring(0,8) + "..." : player }} <button class="btn btn-outline-danger" @click="deletePlayer(i)">Remove</button>
