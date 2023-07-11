@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PlayersView from '../views/PlayersView.vue'
+import RandomTeamView from '../views/RandomTeamView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 
 const router = createRouter({
@@ -9,6 +11,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/add-players',
+      name: 'add-players',
+      component: PlayersView
+    },
+    {
+      path: '/generate-team',
+      name: 'generate-team',
+      component: RandomTeamView
     },
     {
       path: '/:notFound',
