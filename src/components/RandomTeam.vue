@@ -97,7 +97,7 @@ export default {
             return player !== undefined
           })
         if (availablePlayers.length < 5) {
-          this.team = this.teams[0] ? this.teams[0] : []
+          this.team = this.teams ? this.teams[0] : []
           Swal.fire({
             title: 'Not enough players!',
             text: `You need ${5 - availablePlayers.length} more players to form a new team!`,
