@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html class="notranslate" translate="no" lang="en"><script type="text/javascript" async="" charset="utf-8" src="isendu_files/upscope-2.2.104.es6.js"></script><script type="text/javascript" async="" src="isendu_files/JF39x4c4rS.js"></script><script src="isendu_files/177713686628479.js" async=""></script><script async="" src="isendu_files/fbevents.js"></script><script async="" src="isendu_files/insight.old.min.js"></script><script type="text/javascript" async="" src="isendu_files/insight.min.js"></script><script src="isendu_files/conversations-embed.js" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="6533935" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="isendu_files/6533935_002.js" type="text/javascript" id="hs-analytics"></script><script src="isendu_files/feedbackweb-new.js" type="text/javascript" id="hs-feedback-web-6533935" crossorigin="anonymous" data-hubspot-feedback-portal-id="6533935" data-hubspot-feedback-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6533935" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="isendu_files/fb.js" type="text/javascript" id="hs-ads-pixel-6533935" data-ads-portal-id="6533935" data-ads-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="6533935" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="isendu_files/banner.js" type="text/javascript" id="cookieBanner-6533935" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="6533935" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script async="" src="isendu_files/datadog-rum-v4.js"></script><script async="" src="isendu_files/datadog-rum-v4.js"></script><script async="" src="isendu_files/gtm.js"></script><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style data-rc-order="prepend" rc-util-key="@ant-design-icons">
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style><script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", 'GTM-NZKNPNN');</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="google" content="notranslate"><title>isendu</title><meta name="description" content="Entra da qui nel tuo account isendu. Hai perso la password? Da qui la recuperi! Non hai un account? Crealo subito 🙂"><script defer="defer" src="isendu_files/3602.ed7fccfeebf5f1b90049.js"></script><script defer="defer" src="isendu_files/app.8be3b3963c88f12804e5.js"></script><link href="isendu_files/app.6f96081dce4533c749de.css" rel="stylesheet"><script async="" src="isendu_files/hotjar-2882534.js"></script><script charset="utf-8" src="isendu_files/149-273668b2b6f13994d676.js"></script><link rel="stylesheet" href="isendu_files/animation.css" type="text/css"><link type="image/png" rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAHd0lEQVRoQ+1ZC3CU1RW+5/77IglkAyOUoCBDB4NRR1oEWkFBIkgCJD4QkGhlpuNjKnTToWiHjl1lZBADBJSxCKididqJgGYTIgaV8NKmDplWJ9ryGEsRSup0siEEk+z+9/S7iYQl7O6/+yeUMnJndvbxn3vu+c7znrMkLvNFl7n84gqAS23BKxb4v7FAo+9hrzRDWSxEP8PhOJ6WPvwQ+f3tyQqYvWtXmmk2ZkohB5lCpbKiEEn5DQnz+Nwpdzf6iVSyPOPREzNTk+/BHLz/VggaDZ9yCcFBfK50O93L+qzafNTqwOz6epc4efDmsFIzWfHtRDQCPNIFCyeTUCSohVl8LYn3Mcttg10ZH9dMntxqxTeR5xQseiiHw+YmEA+7cAMFKLXvw94VLzdGY+aHNGXV5beYFH4CwubCev2tDgWYZtBUkZAvfDm1oA5gsc3+ouDCwg9Z8B3RWBCJMF4L0te+Udr9+Y17KzPaz7T9AhqG8DwoeRHomJS0zMi87g/12dlJu+rZ86hxYWELzJ0SUwAS6zPWvfFE5PPr3g8MF6J9DVQ3A78byQvfuQPWOCOkWO1WaSs+mzYNcsRe2tWfwZbuMUTBRfPb4J/w++gLh2zwvlj6WOTTrA+2/YSV+iP2DbUrfJcGoQkW9LpTup6rv3PmP6Pxm36oyn3kq28fRAx5jMxRr0RaDAAK/wx0t0R1IZhGSHrcu7Z0Q/fno6q35CKdvNwbIATiANnkcyHkZuE03ndQv+Ni4MB2z4kTfVqo+Xo21c+h/LkdViPxdGr/YesOjBkT6vge/OVDc4RS6xEHA6KA2O/q474/deWrJ6IBjAUCh5wG6/8Av4J2M7AXGQnRYr0UgvokyL7CCzx4APb/EHu9XRYj0UIk/akZQ9dqEMRlZcap/YH5rMRSbBgBvzbgNkhxvJsN51MZJa//Jd6554EgagBtqUMa5cTGUXKZ3B4yfyAUT4T082Ct0T2JmfNACPqdMSTrxQ6t6AAJFi0YRmxqVwJa/geT41MIj3pgvRATM5SpHpXSWDU3p2BPtGJ1wwflg9o5/Bic0hepUWvuMWKz08prEjGr5Rm6HrxdU5NSP3kymMZes5mNv+7c9gAoXrCXes/x1vUE7raxVwBYIowg0Na+fufW6UrQ8/h8QzJ7u1xIiL+TpGeNzKwt/3MAZ4WA241EiP8ayWM23Co9ISA6xliUSYNe+lvOPQf1HgpWjbkv5mZkN1SbI967DtQldECSRPoOZZ44+FNmVYgAnySIh0BATwQbGIpOkeDDyEbVDnJsGejo9znuUeEuawSrftT1pfv50I4BP9vgnV53XiFLUk5Lch0bX+4pzzRDKgtArsWGdIAKSZYNpsFH3G734c8m5AWj3ZuosWp03MsUTLDRm1v3iKUUl4jg+wkg58md6c0c6htL6Q4RUtkjhnzzyqOd5d7umvBUZUZIydR4+21ZYJwvsFgxL0SAXxA/uN3D67iJDDG/dlXBF3aF1+l2XFGgGDFxX7RzOjKQQLNkJwbG+cp/AwDLYwtHZwySeX8qmVljF8Bsf73raPDwNgDJi8UDAE7bAjC2qPxnuDu9hitHzDoi0ejUlhSstwtgom/H4FZu+whnZMXhccQmgMqJQoWrkL7SYtcQCqR6+82p8dvrfccWvXs3BgJvAYA7pgWIttsCoLXTJlo/hH+Oim1eOsVSzPl0Tf6OZK1w65LyvqE28SbqkO74oi8MCxAES20B8PtZbm+swCBALYibIQTt8xieB/asnnYsURA6eMf/KrAIMbYSVTlep9ggBefbAqCFGeurKEC/8ha0FFn6o8m5VbpdvtqVuV9bgZjk3+VoCTYXEqtiuGe0BquLBVLdO4a8ar5tADpHt7ea70Jjt8UXTF+oxH4Mt5b1H27sfm9Rblt3eq31WxdXDQ2r0ONwS90zxL3c6YaLDCqsXT1rq20AnVYIzMO9/tUErKCTdhOA7BIsdwgpvyDDbMJVy8kmXwONT0B/nYf6MVJ34VaWwp1ou9Ml5u1fmd/cIwAz/RUpDUG1CRqcZ3Xouecdpe4MmvhWmMaAwLrSOhPdj37736gx93+yZtbujmJmp5BFHjbeVznK5HAZfrPVnCQq+Hd0IbjP0tqSWcVnb6Y9BqAZjyuqmMrK3IzAuzpJgRIn12mTxe8znH2WVBefG4L1CoBOEIF8pXgdCk+Ph13dUUHbesT5mtNtPLlvxYzz5rS9BkAfOt5XMUmxqVPgjxNXrUUOE+jISKwVXmdxrT/31AXgehoD3RmOXYy5aYiXYNSGDJVgrxsNQ4fL0AEMsZaneNMqcSWJ2jn2qgXOyqFvkseaDt2mFD2C1DgFud1y7B6BIQSN1zNRqYfdb+4tuetf8WyEpv7i9cTT11W5m46GbwqbaiqEmAiNjsT7AFjHg2Rq6JkoYkY3Pc2w1jGMSupQV6pFCu2tXZ6vp3yWi4I7Rt8bk4ql7K2pBK4JnvC3pweGW83BbBgDSCkPtGyiTjchmzc4POJkjievye9P7i+oSzYXslRtggRXACSoqItGdsUCF021CTK+7C3wX80YTEpXIcasAAAAAElFTkSuQmCC" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAHd0lEQVRoQ+1ZC3CU1RW+5/77IglkAyOUoCBDB4NRR1oEWkFBIkgCJD4QkGhlpuNjKnTToWiHjl1lZBADBJSxCKididqJgGYTIgaV8NKmDplWJ9ryGEsRSup0siEEk+z+9/S7iYQl7O6/+yeUMnJndvbxn3vu+c7znrMkLvNFl7n84gqAS23BKxb4v7FAo+9hrzRDWSxEP8PhOJ6WPvwQ+f3tyQqYvWtXmmk2ZkohB5lCpbKiEEn5DQnz+Nwpdzf6iVSyPOPREzNTk+/BHLz/VggaDZ9yCcFBfK50O93L+qzafNTqwOz6epc4efDmsFIzWfHtRDQCPNIFCyeTUCSohVl8LYn3Mcttg10ZH9dMntxqxTeR5xQseiiHw+YmEA+7cAMFKLXvw94VLzdGY+aHNGXV5beYFH4CwubCev2tDgWYZtBUkZAvfDm1oA5gsc3+ouDCwg9Z8B3RWBCJMF4L0te+Udr9+Y17KzPaz7T9AhqG8DwoeRHomJS0zMi87g/12dlJu+rZ86hxYWELzJ0SUwAS6zPWvfFE5PPr3g8MF6J9DVQ3A78byQvfuQPWOCOkWO1WaSs+mzYNcsRe2tWfwZbuMUTBRfPb4J/w++gLh2zwvlj6WOTTrA+2/YSV+iP2DbUrfJcGoQkW9LpTup6rv3PmP6Pxm36oyn3kq28fRAx5jMxRr0RaDAAK/wx0t0R1IZhGSHrcu7Z0Q/fno6q35CKdvNwbIATiANnkcyHkZuE03ndQv+Ni4MB2z4kTfVqo+Xo21c+h/LkdViPxdGr/YesOjBkT6vge/OVDc4RS6xEHA6KA2O/q474/deWrJ6IBjAUCh5wG6/8Av4J2M7AXGQnRYr0UgvokyL7CCzx4APb/EHu9XRYj0UIk/akZQ9dqEMRlZcap/YH5rMRSbBgBvzbgNkhxvJsN51MZJa//Jd6554EgagBtqUMa5cTGUXKZ3B4yfyAUT4T082Ct0T2JmfNACPqdMSTrxQ6t6AAJFi0YRmxqVwJa/geT41MIj3pgvRATM5SpHpXSWDU3p2BPtGJ1wwflg9o5/Bic0hepUWvuMWKz08prEjGr5Rm6HrxdU5NSP3kymMZes5mNv+7c9gAoXrCXes/x1vUE7raxVwBYIowg0Na+fufW6UrQ8/h8QzJ7u1xIiL+TpGeNzKwt/3MAZ4WA241EiP8ayWM23Co9ISA6xliUSYNe+lvOPQf1HgpWjbkv5mZkN1SbI967DtQldECSRPoOZZ44+FNmVYgAnySIh0BATwQbGIpOkeDDyEbVDnJsGejo9znuUeEuawSrftT1pfv50I4BP9vgnV53XiFLUk5Lch0bX+4pzzRDKgtArsWGdIAKSZYNpsFH3G734c8m5AWj3ZuosWp03MsUTLDRm1v3iKUUl4jg+wkg58md6c0c6htL6Q4RUtkjhnzzyqOd5d7umvBUZUZIydR4+21ZYJwvsFgxL0SAXxA/uN3D67iJDDG/dlXBF3aF1+l2XFGgGDFxX7RzOjKQQLNkJwbG+cp/AwDLYwtHZwySeX8qmVljF8Bsf73raPDwNgDJi8UDAE7bAjC2qPxnuDu9hitHzDoi0ejUlhSstwtgom/H4FZu+whnZMXhccQmgMqJQoWrkL7SYtcQCqR6+82p8dvrfccWvXs3BgJvAYA7pgWIttsCoLXTJlo/hH+Oim1eOsVSzPl0Tf6OZK1w65LyvqE28SbqkO74oi8MCxAES20B8PtZbm+swCBALYibIQTt8xieB/asnnYsURA6eMf/KrAIMbYSVTlep9ggBefbAqCFGeurKEC/8ha0FFn6o8m5VbpdvtqVuV9bgZjk3+VoCTYXEqtiuGe0BquLBVLdO4a8ar5tADpHt7ea70Jjt8UXTF+oxH4Mt5b1H27sfm9Rblt3eq31WxdXDQ2r0ONwS90zxL3c6YaLDCqsXT1rq20AnVYIzMO9/tUErKCTdhOA7BIsdwgpvyDDbMJVy8kmXwONT0B/nYf6MVJ34VaWwp1ou9Ml5u1fmd/cIwAz/RUpDUG1CRqcZ3Xouecdpe4MmvhWmMaAwLrSOhPdj37736gx93+yZtbujmJmp5BFHjbeVznK5HAZfrPVnCQq+Hd0IbjP0tqSWcVnb6Y9BqAZjyuqmMrK3IzAuzpJgRIn12mTxe8znH2WVBefG4L1CoBOEIF8pXgdCk+Ph13dUUHbesT5mtNtPLlvxYzz5rS9BkAfOt5XMUmxqVPgjxNXrUUOE+jISKwVXmdxrT/31AXgehoD3RmOXYy5aYiXYNSGDJVgrxsNQ4fL0AEMsZaneNMqcSWJ2jn2qgXOyqFvkseaDt2mFD2C1DgFud1y7B6BIQSN1zNRqYfdb+4tuetf8WyEpv7i9cTT11W5m46GbwqbaiqEmAiNjsT7AFjHg2Rq6JkoYkY3Pc2w1jGMSupQV6pFCu2tXZ6vp3yWi4I7Rt8bk4ql7K2pBK4JnvC3pweGW83BbBgDSCkPtGyiTjchmzc4POJkjievye9P7i+oSzYXslRtggRXACSoqItGdsUCF021CTK+7C3wX80YTEpXIcasAAAAAElFTkSuQmCC"><link rel="apple-touch-icon" href="https://app.isendu.com/assets/images/c4d1ffdec07f3fa73001c6b54991c919.ico"><style type="text/css">
+  #hs-feedback-ui {
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 2147483647;
+    max-width: 100%;
+  }
+
+  .hubspot.space-sword #hs-feedback-ui {
+    z-index: 1070;
+  }
+
+  #hs-feedback-ui.hs-feedback-shown {
+    display: block;
+  }
+
+  #hs-feedback-fetcher {
+    display: none
+  }
+
+  
+  @keyframes feedback-slide-in-hs-feedback-left {
+    from {transform: translate(0, 100%);}
+    to {transform: translate(0, 0);}
+  }
+
+  @keyframes feedback-slide-out-hs-feedback-left {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, 100%);}
+  }
+
+  #hs-feedback-ui.hs-feedback-left {
+    animation-name: feedback-slide-in-hs-feedback-left;
+  }
+
+  #hs-feedback-ui.hs-feedback-left.hs-feedback-slid-out {
+    animation-name: feedback-slide-out-hs-feedback-left;
+    animation-fill-mode: forwards;
+  }
+
+  
+  @keyframes feedback-slide-in-hs-feedback-right {
+    from {transform: translate(0, 100%);}
+    to {transform: translate(0, 0);}
+  }
+
+  @keyframes feedback-slide-out-hs-feedback-right {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, 100%);}
+  }
+
+  #hs-feedback-ui.hs-feedback-right {
+    animation-name: feedback-slide-in-hs-feedback-right;
+  }
+
+  #hs-feedback-ui.hs-feedback-right.hs-feedback-slid-out {
+    animation-name: feedback-slide-out-hs-feedback-right;
+    animation-fill-mode: forwards;
+  }
+
+  
+  @keyframes feedback-slide-in-hs-feedback-top {
+    from {transform: translate(0, -100%);}
+    to {transform: translate(0, 0);}
+  }
+
+  @keyframes feedback-slide-out-hs-feedback-top {
+    from {transform: translate(0, 0);}
+    to {transform: translate(0, -100%);}
+  }
+
+  #hs-feedback-ui.hs-feedback-top {
+    animation-name: feedback-slide-in-hs-feedback-top;
+  }
+
+  #hs-feedback-ui.hs-feedback-top.hs-feedback-slid-out {
+    animation-name: feedback-slide-out-hs-feedback-top;
+    animation-fill-mode: forwards;
+  }
+
+
+  #hs-feedback-ui > iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  #hs-feedback-ui:not(.hs-feedback-top) {
+    bottom: 0;
+  }
+
+  #hs-feedback-ui.hs-feedback-left {
+    left: 0;
+  }
+
+  #hs-feedback-ui.hs-feedback-right {
+    right: 0;
+  }
+
+  .zorse #hs-feedback-ui:not(.hs-feedback-top) {
+    bottom: 6px;
+  }
+
+  .zorse #hs-feedback-ui.hs-feedback-right {
+    right: 0;
+  }
+
+  #hs-feedback-ui.hs-feedback-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #hs-feedback-ui.hs-feedback-nps:not(.hs-feedback-top) {
+    width: 480px;
+  }
+
+  #hs-feedback-ui.hs-feedback-csat:not(.hs-feedback-top) {
+    width: 350px;
+  }
+
+  #hs-feedback-ui.hs-feedback-csat.hs-feedback-extended-width:not(.hs-feedback-top) {
+    width: 550px;
+  }
+
+  @media only screen and (min-width: 544px) {
+    #hs-feedback-ui.hs-feedback-csat:not(.hs-feedback-top):not(.hs-feedback-expanded) {
+      width: 450px;
+    }
+  }
+
+  #hs-feedback-ui.hs-feedback-csat.hs-feedback-extended-width:not(.hs-feedback-top) {
+    width: 550px !important;
+  }
+
+  #hs-feedback-ui.preview.hs-feedback-csat.hs-feedback-callout:not(.hs-feedback-expanded):not(.hs-feedback-top) {
+    width: 450px !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #hs-feedback-ui:not(.preview):not(.hs-feedback-callout):not(.hs-feedback-top),
+    #hs-feedback-ui.hs-feedback-expanded:not(.preview):not(.hs-feedback-top) {
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #hs-feedback-ui.preview:not(.hs-feedback-top),
+    #hs-feedback-ui.hs-feedback-expanded.preview:not(.hs-feedback-top) {
+      width: 100% !important;
+    }
+  }
+
+  #hs-feedback-ui.hs-feedback-shown ~ #tally-widget-container,
+  #hs-feedback-ui.hs-feedback-shown ~ #wootric-modal {
+    display: none !important;
+  }
+
+  /* hide all popups in the same position as us */
+  @media only screen and (min-width: 544px) {
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown ~ #hubspot-messages-iframe-container,
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown ~ .leadinModal-theme-bottom-right-corner,
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown  ~ .leadinModal-theme-bottom-left-corner,
+    #hs-feedback-ui.hs-feedback-top.hs-feedback-shown   ~ .leadinModal-theme-top {
+      display: none !important;
+    }
+  }
+
+  /* hide leadflows when we're tablet-stretched across from them */
+  @media only screen and (min-width: 544px) and (max-width: 970px) {
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown  ~ .leadinModal-theme-bottom-right-corner,
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown ~ .leadinModal-theme-bottom-left-corner {
+      display: none !important;
+    }
+  }
+
+  /* hide messages when we're tablet-stretched across from them */
+  @media only screen and (max-width: 966px) {
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown ~ #hubspot-messages-iframe-container {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 544px) {
+
+    /* repeat above rules for small screens when we're set to display on mobile */
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile) ~ #hubspot-messages-iframe-container,
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)  ~ #hubspot-messages-iframe-container,
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile) ~ .leadinModal-theme-bottom-right-corner,
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)  ~ .leadinModal-theme-bottom-left-corner,
+    #hs-feedback-ui.hs-feedback-top.hs-feedback-shown:not(.hs-feedback-no-mobile)   ~ .leadinModal-theme-top,
+    #hs-feedback-ui.hs-feedback-left.hs-feedback-shown:not(.hs-feedback-no-mobile)  ~ .leadinModal-theme-bottom-right-corner,
+    #hs-feedback-ui.hs-feedback-right.hs-feedback-shown:not(.hs-feedback-no-mobile) ~ .leadinModal-theme-bottom-left-corner {
+      display: none !important;
+    }
+
+    /* don't display us on small screens if we're set to not display on mobile */
+    #hs-feedback-ui.hs-feedback-no-mobile {
+      display: none;
+    }
+  }
+</style><link rel="stylesheet" type="text/css" href="isendu_files/6665.fcbe277f38721a9f2695.css"><script async="" src="isendu_files/modules.fba0c9b2e1c5e125e170.js" charset="utf-8"></script><link id="beamerStyles" type="text/css" rel="stylesheet" href="isendu_files/beamer-embed.css"><script id="beamerFaviconScript" type="text/javascript" src="isendu_files/favico.js"></script><style>
+  #upscope___remote-control-container, #upscope___remote-control-container * {
+    accent-color: initial;
+align-content: initial;
+align-items: initial;
+align-self: initial;
+animation-delay: initial;
+animation-direction: initial;
+animation-duration: initial;
+animation-fill-mode: initial;
+animation-iteration-count: initial;
+animation-name: initial;
+animation-play-state: initial;
+animation-timing-function: initial;
+appearance: initial;
+aspect-ratio: initial;
+backdrop-filter: initial;
+backface-visibility: initial;
+background-attachment: initial;
+background-blend-mode: initial;
+background-clip: initial;
+background-color: initial;
+background-image: initial;
+background-origin: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-repeat: initial;
+background-size: initial;
+block-size: initial;
+border-block-end-color: initial;
+border-block-end-style: initial;
+border-block-end-width: initial;
+border-block-start-color: initial;
+border-block-start-style: initial;
+border-block-start-width: initial;
+border-bottom-color: initial;
+border-bottom-left-radius: initial;
+border-bottom-right-radius: initial;
+border-bottom-style: initial;
+border-bottom-width: initial;
+border-collapse: initial;
+border-end-end-radius: initial;
+border-end-start-radius: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+border-image-slice: initial;
+border-image-source: initial;
+border-image-width: initial;
+border-inline-end-color: initial;
+border-inline-end-style: initial;
+border-inline-end-width: initial;
+border-inline-start-color: initial;
+border-inline-start-style: initial;
+border-inline-start-width: initial;
+border-left-color: initial;
+border-left-style: initial;
+border-left-width: initial;
+border-right-color: initial;
+border-right-style: initial;
+border-right-width: initial;
+border-spacing: initial;
+border-start-end-radius: initial;
+border-start-start-radius: initial;
+border-top-color: initial;
+border-top-left-radius: initial;
+border-top-right-radius: initial;
+border-top-style: initial;
+border-top-width: initial;
+bottom: initial;
+box-decoration-break: initial;
+box-shadow: initial;
+box-sizing: initial;
+break-after: initial;
+break-before: initial;
+break-inside: initial;
+caption-side: initial;
+caret-color: initial;
+clear: initial;
+clip: initial;
+clip-path: initial;
+clip-rule: initial;
+color: initial;
+color-interpolation: initial;
+color-interpolation-filters: initial;
+color-scheme: initial;
+column-count: initial;
+column-fill: initial;
+column-gap: initial;
+column-rule-color: initial;
+column-rule-style: initial;
+column-rule-width: initial;
+column-span: initial;
+column-width: initial;
+contain: initial;
+contain-intrinsic-block-size: initial;
+contain-intrinsic-height: initial;
+contain-intrinsic-inline-size: initial;
+contain-intrinsic-width: initial;
+container-name: initial;
+container-type: initial;
+content: initial;
+counter-increment: initial;
+counter-reset: initial;
+counter-set: initial;
+cursor: initial;
+cx: initial;
+cy: initial;
+direction: initial;
+display: initial;
+dominant-baseline: initial;
+empty-cells: initial;
+fill: initial;
+fill-opacity: initial;
+fill-rule: initial;
+filter: initial;
+flex-basis: initial;
+flex-direction: initial;
+flex-grow: initial;
+flex-shrink: initial;
+flex-wrap: initial;
+float: initial;
+flood-color: initial;
+flood-opacity: initial;
+font-family: initial;
+font-feature-settings: initial;
+font-kerning: initial;
+font-language-override: initial;
+font-optical-sizing: initial;
+font-palette: initial;
+font-size: initial;
+font-size-adjust: initial;
+font-stretch: initial;
+font-style: initial;
+font-synthesis-small-caps: initial;
+font-synthesis-style: initial;
+font-synthesis-weight: initial;
+font-variant-alternates: initial;
+font-variant-caps: initial;
+font-variant-east-asian: initial;
+font-variant-ligatures: initial;
+font-variant-numeric: initial;
+font-variant-position: initial;
+font-variation-settings: initial;
+font-weight: initial;
+forced-color-adjust: initial;
+grid-auto-columns: initial;
+grid-auto-flow: initial;
+grid-auto-rows: initial;
+grid-column-end: initial;
+grid-column-start: initial;
+grid-row-end: initial;
+grid-row-start: initial;
+grid-template-areas: initial;
+grid-template-columns: initial;
+grid-template-rows: initial;
+height: initial;
+hyphenate-character: initial;
+hyphens: initial;
+image-orientation: initial;
+image-rendering: initial;
+ime-mode: initial;
+inline-size: initial;
+inset-block-end: initial;
+inset-block-start: initial;
+inset-inline-end: initial;
+inset-inline-start: initial;
+isolation: initial;
+justify-content: initial;
+justify-items: initial;
+justify-self: initial;
+left: initial;
+letter-spacing: initial;
+lighting-color: initial;
+line-break: initial;
+line-height: initial;
+list-style-image: initial;
+list-style-position: initial;
+list-style-type: initial;
+margin-block-end: initial;
+margin-block-start: initial;
+margin-bottom: initial;
+margin-inline-end: initial;
+margin-inline-start: initial;
+margin-left: initial;
+margin-right: initial;
+margin-top: initial;
+marker-end: initial;
+marker-mid: initial;
+marker-start: initial;
+mask-clip: initial;
+mask-composite: initial;
+mask-image: initial;
+mask-mode: initial;
+mask-origin: initial;
+mask-position-x: initial;
+mask-position-y: initial;
+mask-repeat: initial;
+mask-size: initial;
+mask-type: initial;
+max-block-size: initial;
+max-height: initial;
+max-inline-size: initial;
+max-width: initial;
+min-block-size: initial;
+min-height: initial;
+min-inline-size: initial;
+min-width: initial;
+mix-blend-mode: initial;
+object-fit: initial;
+object-position: initial;
+offset-anchor: initial;
+offset-distance: initial;
+offset-path: initial;
+offset-rotate: initial;
+opacity: initial;
+order: initial;
+outline-color: initial;
+outline-offset: initial;
+outline-style: initial;
+outline-width: initial;
+overflow-anchor: initial;
+overflow-block: initial;
+overflow-clip-margin: initial;
+overflow-inline: initial;
+overflow-wrap: initial;
+overflow-x: initial;
+overflow-y: initial;
+overscroll-behavior-block: initial;
+overscroll-behavior-inline: initial;
+overscroll-behavior-x: initial;
+overscroll-behavior-y: initial;
+padding-block-end: initial;
+padding-block-start: initial;
+padding-bottom: initial;
+padding-inline-end: initial;
+padding-inline-start: initial;
+padding-left: initial;
+padding-right: initial;
+padding-top: initial;
+page: initial;
+paint-order: initial;
+perspective: initial;
+perspective-origin: initial;
+pointer-events: initial;
+position: initial;
+print-color-adjust: initial;
+quotes: initial;
+r: initial;
+resize: initial;
+right: initial;
+rotate: initial;
+row-gap: initial;
+ruby-align: initial;
+ruby-position: initial;
+rx: initial;
+ry: initial;
+scale: initial;
+scroll-behavior: initial;
+scroll-margin-block-end: initial;
+scroll-margin-block-start: initial;
+scroll-margin-bottom: initial;
+scroll-margin-inline-end: initial;
+scroll-margin-inline-start: initial;
+scroll-margin-left: initial;
+scroll-margin-right: initial;
+scroll-margin-top: initial;
+scroll-padding-block-end: initial;
+scroll-padding-block-start: initial;
+scroll-padding-bottom: initial;
+scroll-padding-inline-end: initial;
+scroll-padding-inline-start: initial;
+scroll-padding-left: initial;
+scroll-padding-right: initial;
+scroll-padding-top: initial;
+scroll-snap-align: initial;
+scroll-snap-stop: initial;
+scroll-snap-type: initial;
+scrollbar-color: initial;
+scrollbar-gutter: initial;
+scrollbar-width: initial;
+shape-image-threshold: initial;
+shape-margin: initial;
+shape-outside: initial;
+shape-rendering: initial;
+stop-color: initial;
+stop-opacity: initial;
+stroke-dasharray: initial;
+stroke-dashoffset: initial;
+stroke-linecap: initial;
+stroke-linejoin: initial;
+stroke-miterlimit: initial;
+stroke-opacity: initial;
+stroke-width: initial;
+tab-size: initial;
+table-layout: initial;
+text-align: initial;
+text-align-last: initial;
+text-anchor: initial;
+text-combine-upright: initial;
+text-decoration-color: initial;
+text-decoration-line: initial;
+text-decoration-skip-ink: initial;
+text-decoration-style: initial;
+text-decoration-thickness: initial;
+text-emphasis-color: initial;
+text-emphasis-position: initial;
+text-emphasis-style: initial;
+text-indent: initial;
+text-justify: initial;
+text-orientation: initial;
+text-overflow: initial;
+text-rendering: initial;
+text-shadow: initial;
+text-transform: initial;
+text-underline-offset: initial;
+text-underline-position: initial;
+top: initial;
+touch-action: initial;
+transform: initial;
+transform-box: initial;
+transform-origin: initial;
+transform-style: initial;
+transition-delay: initial;
+transition-duration: initial;
+transition-property: initial;
+transition-timing-function: initial;
+translate: initial;
+unicode-bidi: initial;
+user-select: initial;
+vector-effect: initial;
+vertical-align: initial;
+visibility: initial;
+white-space: initial;
+width: initial;
+will-change: initial;
+word-break: initial;
+word-spacing: initial;
+writing-mode: initial;
+x: initial;
+y: initial;
+z-index: initial;
+-moz-box-align: initial;
+-moz-box-direction: initial;
+-moz-box-flex: initial;
+-moz-box-ordinal-group: initial;
+-moz-box-orient: initial;
+-moz-box-pack: initial;
+-moz-float-edge: initial;
+-moz-force-broken-image-icon: initial;
+-moz-orient: initial;
+-moz-osx-font-smoothing: initial;
+-moz-text-size-adjust: initial;
+-moz-user-focus: initial;
+-moz-user-input: initial;
+-moz-user-modify: initial;
+-moz-window-dragging: initial;
+-webkit-line-clamp: initial;
+-webkit-text-fill-color: initial;
+-webkit-text-security: initial;
+-webkit-text-stroke-color: initial;
+-webkit-text-stroke-width: initial;
+--toastify-color-success: initial;
+--toastify-color-error: initial;
+--toastify-color-progress-error: initial;
+--toastify-color-progress-warning: initial;
+--toastify-color-progress-success: initial;
+--toastify-color-progress-info: initial;
+--toastify-color-progress-dark: initial;
+--toastify-color-progress-light: initial;
+--toastify-spinner-color-empty-area: initial;
+--toastify-spinner-color: initial;
+--toastify-text-color-error: initial;
+--toastify-text-color-warning: initial;
+--toastify-text-color-success: initial;
+--toastify-text-color-info: initial;
+--toastify-text-color-dark: initial;
+--toastify-text-color-light: initial;
+--toastify-z-index: initial;
+--toastify-font-family: initial;
+--toastify-toast-max-height: initial;
+--toastify-toast-min-height: initial;
+--toastify-toast-background: initial;
+--toastify-toast-width: initial;
+--toastify-icon-color-error: initial;
+--toastify-icon-color-warning: initial;
+--toastify-icon-color-success: initial;
+--toastify-icon-color-info: initial;
+--toastify-color-transparent: initial;
+--toastify-color-warning: initial;
+--toastify-color-info: initial;
+--toastify-color-dark: initial;
+--toastify-color-light: initial;
+--scroll-bar: initial;
+--antd-wave-shadow-color: initial
+  }
+
+  #upscope___remote-control-container #upscope___overlay {
+display: none;
+position: fixed;
+z-index: 2147483646;
+width: 10000px;
+height: 10000px;
+top: -5000px;
+left: -5000px;
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s;
+-webkit-transition: opacity 0.3s;
+background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMDBweCIgaGVpZ2h0PSIxMDAwMHB4IiB2aWV3Qm94PSIwIDAgMTAwMDAgMTAwMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogIDxnIGlkPSJvdmVybGF5IiBmaWxsPSIjMDAwMDAwIj4NCiAgICAgIDxwYXRoIGQ9Ik0wLDAgTDEwMDAwLDAgTDEwMDAwLDEwMDAwIEwwLDEwMDAwIEwwLDAgTDAsMCBaIE01MDAwLDUwNTQgQzUwMjkuODIzMzgsNTA1NCA1MDU0LDUwMjkuODIzMzggNTA1NCw1MDAwIEM1MDU0LDQ5NzAuMTc2NjIgNTAyOS44MjMzOCw0OTQ2IDUwMDAsNDk0NiBDNDk3MC4xNzY2Miw0OTQ2IDQ5NDYsNDk3MC4xNzY2MiA0OTQ2LDUwMDAgQzQ5NDYsNTAyOS44MjMzOCA0OTcwLjE3NjYyLDUwNTQgNTAwMCw1MDU0IEw1MDAwLDUwNTQgWiIgaWQ9ImlubmVyLWNpcmNsZSI+PC9wYXRoPg0KICA8L2c+DQo8L3N2Zz4=");
+background-size: 50000px 50000px;
+background-position: center center;
+
+}
+#upscope___remote-control-container #upscope___overlay.upscope___overlay--show {
+opacity: 0.4;
+transition: background-size 0.3s linear, opacity 0.3s, top 0.1s, left 0.1s;
+-webkit-transition: background-size 0.3s linear, opacity 0.3s, top 0.1s, left 0.1s;
+background-size: 10000px 10000px;
+
+}
+#upscope___remote-control-container #upscope___overlay.upscope___overlay--white {
+background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMDAiIGhlaWdodD0iMTAwMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDEwMDAwdjEwMDAwSDBWMHptNTAwMCA1MDU0YzI5LjggMCA1NC0yNC4yIDU0LTU0cy0yNC4yLTU0LTU0LTU0LTU0IDI0LjItNTQgNTQgMjQuMiA1NCA1NCA1NHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik01MDAwIDUwNTRjMjkuOCAwIDU0LTI0LjIgNTQtNTRzLTI0LjItNTQtNTQtNTQtNTQgMjQuMi01NCA1NCAyNC4yIDU0IDU0IDU0eiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjYiLz48L2c+PC9zdmc+");
+
+}
+#upscope___remote-control-container #upscope___overlay.upscope___overlay--white.upscope___overlay--show {
+opacity: 0.4;
+
+}
+#upscope___remote-control-container .upscope___svg {
+pointer-events: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 2147483645;
+
+}
+#upscope___remote-control-container #upscope___drag-protection {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 2147483645;
+display: none;
+
+}
+#upscope___remote-control-container @keyframes upscope___svg____line__animation {
+from {
+stroke-dashoffset: 10000;
+
+}
+to {
+stroke-dashoffset: 0;
+
+}
+}
+#upscope___remote-control-container .upscope___svg___line {
+fill: none;
+stroke-width: 14px;
+stroke-linecap: round;
+stroke-linejoin: round;
+opacity: 0.6;
+stroke-dasharray: 10000;
+stroke-dashoffset: 0;
+transition: opacity 1s;
+animation: upscope___svg____line__animation 5s forwards;
+
+}
+#upscope___remote-control-container .upscope___svg___line.upscope___svg___line--disappear {
+opacity: 0;
+stroke-dashoffset: 0;
+stroke-dasharray: 0;
+
+}
+#upscope___remote-control-container .upscope___svg___line.upscope___svg___line--gone {
+display: none;
+opacity: 0;
+
+}
+  </style><style>
+  #upscope___promo-link-container, #upscope___promo-link-container * {
+    accent-color: initial;
+align-content: initial;
+align-items: initial;
+align-self: initial;
+animation-delay: initial;
+animation-direction: initial;
+animation-duration: initial;
+animation-fill-mode: initial;
+animation-iteration-count: initial;
+animation-name: initial;
+animation-play-state: initial;
+animation-timing-function: initial;
+appearance: initial;
+aspect-ratio: initial;
+backdrop-filter: initial;
+backface-visibility: initial;
+background-attachment: initial;
+background-blend-mode: initial;
+background-clip: initial;
+background-color: initial;
+background-image: initial;
+background-origin: initial;
+background-position-x: initial;
+background-position-y: initial;
+background-repeat: initial;
+background-size: initial;
+block-size: initial;
+border-block-end-color: initial;
+border-block-end-style: initial;
+border-block-end-width: initial;
+border-block-start-color: initial;
+border-block-start-style: initial;
+border-block-start-width: initial;
+border-bottom-color: initial;
+border-bottom-left-radius: initial;
+border-bottom-right-radius: initial;
+border-bottom-style: initial;
+border-bottom-width: initial;
+border-collapse: initial;
+border-end-end-radius: initial;
+border-end-start-radius: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+border-image-slice: initial;
+border-image-source: initial;
+border-image-width: initial;
+border-inline-end-color: initial;
+border-inline-end-style: initial;
+border-inline-end-width: initial;
+border-inline-start-color: initial;
+border-inline-start-style: initial;
+border-inline-start-width: initial;
+border-left-color: initial;
+border-left-style: initial;
+border-left-width: initial;
+border-right-color: initial;
+border-right-style: initial;
+border-right-width: initial;
+border-spacing: initial;
+border-start-end-radius: initial;
+border-start-start-radius: initial;
+border-top-color: initial;
+border-top-left-radius: initial;
+border-top-right-radius: initial;
+border-top-style: initial;
+border-top-width: initial;
+bottom: initial;
+box-decoration-break: initial;
+box-shadow: initial;
+box-sizing: initial;
+break-after: initial;
+break-before: initial;
+break-inside: initial;
+caption-side: initial;
+caret-color: initial;
+clear: initial;
+clip: initial;
+clip-path: initial;
+clip-rule: initial;
+color: initial;
+color-interpolation: initial;
+color-interpolation-filters: initial;
+color-scheme: initial;
+column-count: initial;
+column-fill: initial;
+column-gap: initial;
+column-rule-color: initial;
+column-rule-style: initial;
+column-rule-width: initial;
+column-span: initial;
+column-width: initial;
+contain: initial;
+contain-intrinsic-block-size: initial;
+contain-intrinsic-height: initial;
+contain-intrinsic-inline-size: initial;
+contain-intrinsic-width: initial;
+container-name: initial;
+container-type: initial;
+content: initial;
+counter-increment: initial;
+counter-reset: initial;
+counter-set: initial;
+cursor: initial;
+cx: initial;
+cy: initial;
+direction: initial;
+display: initial;
+dominant-baseline: initial;
+empty-cells: initial;
+fill: initial;
+fill-opacity: initial;
+fill-rule: initial;
+filter: initial;
+flex-basis: initial;
+flex-direction: initial;
+flex-grow: initial;
+flex-shrink: initial;
+flex-wrap: initial;
+float: initial;
+flood-color: initial;
+flood-opacity: initial;
+font-family: initial;
+font-feature-settings: initial;
+font-kerning: initial;
+font-language-override: initial;
+font-optical-sizing: initial;
+font-palette: initial;
+font-size: initial;
+font-size-adjust: initial;
+font-stretch: initial;
+font-style: initial;
+font-synthesis-small-caps: initial;
+font-synthesis-style: initial;
+font-synthesis-weight: initial;
+font-variant-alternates: initial;
+font-variant-caps: initial;
+font-variant-east-asian: initial;
+font-variant-ligatures: initial;
+font-variant-numeric: initial;
+font-variant-position: initial;
+font-variation-settings: initial;
+font-weight: initial;
+forced-color-adjust: initial;
+grid-auto-columns: initial;
+grid-auto-flow: initial;
+grid-auto-rows: initial;
+grid-column-end: initial;
+grid-column-start: initial;
+grid-row-end: initial;
+grid-row-start: initial;
+grid-template-areas: initial;
+grid-template-columns: initial;
+grid-template-rows: initial;
+height: initial;
+hyphenate-character: initial;
+hyphens: initial;
+image-orientation: initial;
+image-rendering: initial;
+ime-mode: initial;
+inline-size: initial;
+inset-block-end: initial;
+inset-block-start: initial;
+inset-inline-end: initial;
+inset-inline-start: initial;
+isolation: initial;
+justify-content: initial;
+justify-items: initial;
+justify-self: initial;
+left: initial;
+letter-spacing: initial;
+lighting-color: initial;
+line-break: initial;
+line-height: initial;
+list-style-image: initial;
+list-style-position: initial;
+list-style-type: initial;
+margin-block-end: initial;
+margin-block-start: initial;
+margin-bottom: initial;
+margin-inline-end: initial;
+margin-inline-start: initial;
+margin-left: initial;
+margin-right: initial;
+margin-top: initial;
+marker-end: initial;
+marker-mid: initial;
+marker-start: initial;
+mask-clip: initial;
+mask-composite: initial;
+mask-image: initial;
+mask-mode: initial;
+mask-origin: initial;
+mask-position-x: initial;
+mask-position-y: initial;
+mask-repeat: initial;
+mask-size: initial;
+mask-type: initial;
+max-block-size: initial;
+max-height: initial;
+max-inline-size: initial;
+max-width: initial;
+min-block-size: initial;
+min-height: initial;
+min-inline-size: initial;
+min-width: initial;
+mix-blend-mode: initial;
+object-fit: initial;
+object-position: initial;
+offset-anchor: initial;
+offset-distance: initial;
+offset-path: initial;
+offset-rotate: initial;
+opacity: initial;
+order: initial;
+outline-color: initial;
+outline-offset: initial;
+outline-style: initial;
+outline-width: initial;
+overflow-anchor: initial;
+overflow-block: initial;
+overflow-clip-margin: initial;
+overflow-inline: initial;
+overflow-wrap: initial;
+overflow-x: initial;
+overflow-y: initial;
+overscroll-behavior-block: initial;
+overscroll-behavior-inline: initial;
+overscroll-behavior-x: initial;
+overscroll-behavior-y: initial;
+padding-block-end: initial;
+padding-block-start: initial;
+padding-bottom: initial;
+padding-inline-end: initial;
+padding-inline-start: initial;
+padding-left: initial;
+padding-right: initial;
+padding-top: initial;
+page: initial;
+paint-order: initial;
+perspective: initial;
+perspective-origin: initial;
+pointer-events: initial;
+position: initial;
+print-color-adjust: initial;
+quotes: initial;
+r: initial;
+resize: initial;
+right: initial;
+rotate: initial;
+row-gap: initial;
+ruby-align: initial;
+ruby-position: initial;
+rx: initial;
+ry: initial;
+scale: initial;
+scroll-behavior: initial;
+scroll-margin-block-end: initial;
+scroll-margin-block-start: initial;
+scroll-margin-bottom: initial;
+scroll-margin-inline-end: initial;
+scroll-margin-inline-start: initial;
+scroll-margin-left: initial;
+scroll-margin-right: initial;
+scroll-margin-top: initial;
+scroll-padding-block-end: initial;
+scroll-padding-block-start: initial;
+scroll-padding-bottom: initial;
+scroll-padding-inline-end: initial;
+scroll-padding-inline-start: initial;
+scroll-padding-left: initial;
+scroll-padding-right: initial;
+scroll-padding-top: initial;
+scroll-snap-align: initial;
+scroll-snap-stop: initial;
+scroll-snap-type: initial;
+scrollbar-color: initial;
+scrollbar-gutter: initial;
+scrollbar-width: initial;
+shape-image-threshold: initial;
+shape-margin: initial;
+shape-outside: initial;
+shape-rendering: initial;
+stop-color: initial;
+stop-opacity: initial;
+stroke-dasharray: initial;
+stroke-dashoffset: initial;
+stroke-linecap: initial;
+stroke-linejoin: initial;
+stroke-miterlimit: initial;
+stroke-opacity: initial;
+stroke-width: initial;
+tab-size: initial;
+table-layout: initial;
+text-align: initial;
+text-align-last: initial;
+text-anchor: initial;
+text-combine-upright: initial;
+text-decoration-color: initial;
+text-decoration-line: initial;
+text-decoration-skip-ink: initial;
+text-decoration-style: initial;
+text-decoration-thickness: initial;
+text-emphasis-color: initial;
+text-emphasis-position: initial;
+text-emphasis-style: initial;
+text-indent: initial;
+text-justify: initial;
+text-orientation: initial;
+text-overflow: initial;
+text-rendering: initial;
+text-shadow: initial;
+text-transform: initial;
+text-underline-offset: initial;
+text-underline-position: initial;
+top: initial;
+touch-action: initial;
+transform: initial;
+transform-box: initial;
+transform-origin: initial;
+transform-style: initial;
+transition-delay: initial;
+transition-duration: initial;
+transition-property: initial;
+transition-timing-function: initial;
+translate: initial;
+unicode-bidi: initial;
+user-select: initial;
+vector-effect: initial;
+vertical-align: initial;
+visibility: initial;
+white-space: initial;
+width: initial;
+will-change: initial;
+word-break: initial;
+word-spacing: initial;
+writing-mode: initial;
+x: initial;
+y: initial;
+z-index: initial;
+-moz-box-align: initial;
+-moz-box-direction: initial;
+-moz-box-flex: initial;
+-moz-box-ordinal-group: initial;
+-moz-box-orient: initial;
+-moz-box-pack: initial;
+-moz-float-edge: initial;
+-moz-force-broken-image-icon: initial;
+-moz-orient: initial;
+-moz-osx-font-smoothing: initial;
+-moz-text-size-adjust: initial;
+-moz-user-focus: initial;
+-moz-user-input: initial;
+-moz-user-modify: initial;
+-moz-window-dragging: initial;
+-webkit-line-clamp: initial;
+-webkit-text-fill-color: initial;
+-webkit-text-security: initial;
+-webkit-text-stroke-color: initial;
+-webkit-text-stroke-width: initial;
+--toastify-color-success: initial;
+--toastify-color-error: initial;
+--toastify-color-progress-error: initial;
+--toastify-color-progress-warning: initial;
+--toastify-color-progress-success: initial;
+--toastify-color-progress-info: initial;
+--toastify-color-progress-dark: initial;
+--toastify-color-progress-light: initial;
+--toastify-spinner-color-empty-area: initial;
+--toastify-spinner-color: initial;
+--toastify-text-color-error: initial;
+--toastify-text-color-warning: initial;
+--toastify-text-color-success: initial;
+--toastify-text-color-info: initial;
+--toastify-text-color-dark: initial;
+--toastify-text-color-light: initial;
+--toastify-z-index: initial;
+--toastify-font-family: initial;
+--toastify-toast-max-height: initial;
+--toastify-toast-min-height: initial;
+--toastify-toast-background: initial;
+--toastify-toast-width: initial;
+--toastify-icon-color-error: initial;
+--toastify-icon-color-warning: initial;
+--toastify-icon-color-success: initial;
+--toastify-icon-color-info: initial;
+--toastify-color-transparent: initial;
+--toastify-color-warning: initial;
+--toastify-color-info: initial;
+--toastify-color-dark: initial;
+--toastify-color-light: initial;
+--scroll-bar: initial;
+--antd-wave-shadow-color: initial
+  }
+
+  #upscope___promo-link-container #upscope___promo-link, #upscope___promo-link * {
+text-decoration: none;
+font-size: 12px;
+font-family: 'Avenir Next', Avenir, 'Lucida Grande', Helvetica, sans-serif;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+-webkit-font-smoothing: subpixel-antialiased;
+font-weight: 600;
+user-select: none;
+
+}
+#upscope___promo-link-container #upscope___promo-link {
+z-index: 2147483647;
+display: none;
+border-radius: 0 3px 0 0;
+padding: 2px 2px 2px 5px;
+position: fixed;
+bottom: 0;
+left: 0;
+background: rgba(255, 255, 255, 0.8);
+color: #515151;
+border: 1px solid rgba(0, 0, 0, 0.5);
+border-left: none;
+border-bottom: none;
+
+}
+#upscope___promo-link-container #upscope___promo-link.upscope___promo-link--active, #upscope___promo-link.upscope___promo-link--deactivating {
+display: block;
+
+}
+#upscope___promo-link-container #upscope___promo-link__upscope-link {
+position: relative;
+cursor: pointer;
+color: black;
+
+}
+#upscope___promo-link-container #upscope___promo-link__icon {
+font-weight: 700;
+
+}
+#upscope___promo-link-container #upscope___promo-link__stop-button {
+background: #d90000;
+color: white;
+border-radius: 2px;
+padding: 0 3px;
+cursor: pointer;
+text-shadow: 0.3px 0 0 white;
+
+}
+#upscope___promo-link-container #upscope___promo-link__upscope-link + #upscope___promo-link__stop-button {
+margin-left: 10px;
+
+}
+#upscope___promo-link-container #upscope___promo-link__stop-button:hover {
+background: #a30000;
+
+}
+#upscope___promo-link-container #upscope___promo-link__stop-button:active {
+background: #770000;
+
+}
+#upscope___promo-link-container #upscope___promo-link.upscope___promo-link--deactivating #upscope___promo-link__stop-button {
+display: none;
+
+}
+#upscope___promo-link-container #upscope___promo-link.upscope___promo-link--deactivating #upscope___promo-link__screensharing-by {
+display: none;
+
+}
+#upscope___promo-link-container #upscope___promo-link__thank-you, #upscope___promo-link__learn-more {
+display: none;
+
+}
+#upscope___promo-link-container #upscope___promo-link.upscope___promo-link--deactivating #upscope___promo-link__thank-you, #upscope___promo-link.upscope___promo-link--deactivating #upscope___promo-link__learn-more {
+display: inline;
+
+}
+  </style><script id="beamerNpsScript" type="text/javascript" src="isendu_files/beamer-nps-embed.js"></script><link rel="stylesheet" type="text/css" href="isendu_files/9982.e09d812c964cf0374924.css"><style data-rc-order="append" rc-util-key="rc-util-locker-1689082852596_34">
+html body {
+  overflow-y: hidden;
+  
+}</style></head><body class="notranslate"><div id="hs-feedback-fetcher" title="submit hubspot feedback"><iframe title="Submit HubSpot product feedback" src="isendu_files/feedback-web-fetcher.html" frameborder="0"></iframe></div><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .hs-shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .hs-shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .hs-shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}</style><div id="root"><div class="Toastify"></div><section class="ant-layout DefaultLayout"><header class="ant-layout-header DefaultLayout__Header"><div class="Header__NavBar"><div class="Header__NavBar__Company"><div class="Header__Navbar__Hamburger "><div class="icon"></div></div><div class="Header__NavBar__Logo"><a href="https://app.isendu.com/"><img style="object-fit: contain; width: 100%; height: 100%;" src="isendu_files/isu_logo.svg"></a></div></div><div class="Header__NavBar__Menu"><div class="Header__NavBar__Actions"><div class="BeamerButton Header__NavBar__Button beamerButton beamer_beamerSelector" data-beamer-keypress="true"><img src="isendu_files/news.svg" alt="News"><div class="beamer_icon" style="display: none; background-color: rgb(255, 90, 95);" data-beamer-keypress="true">1</div></div><div class="NewsButton Header__NavBar__Button"><img src="isendu_files/help.svg" alt="News"></div></div><div class="ant-divider ant-divider-vertical Header__NavBar__Menu__Divider" role="separator"></div><span class="Header__NavBar__Button"><div class="ant-space ant-space-horizontal ant-space-align-center pl-1 pr-1" style="gap: 8px;"><div class="ant-space-item" style=""><span style="margin-bottom: 3px;" class="ant-avatar ant-avatar-circle ant-avatar-image"><img src="isendu_files/26db4600-15c1-11ee-a4b8-a5e071a03679-unnamed%20(1).png"></span></div><div class="ant-space-item"><span class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line username capitalize" style="max-width: 300px;">AUTOMARKET PRO</span></div></div></span></div></div></header><div class="DefaultLayout__Body" style="margin-left: 65px;"><aside class="Sidebar Sidebar--closed"><div class="Sidebar__Elements"><div><div class="Sidebar__Element Sidebar__Element--active Sidebar__Element--open"><img class="Sidebar__Icon" src="isendu_files/shipment_hover.svg" alt="Shipments"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Spedizioni</div><button class="Sidebar__ChevronButton"><span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button></div></div><div class="Sidebar__SubMenu" style="height: 0px;"><div class="Sidebar__SubElement Sidebar__SubElement--active">Ordini</div><div class="Sidebar__SubElement">Ritiri</div><div class="Sidebar__SubElement">Resi</div></div></div><div><div class="Sidebar__Element"><img class="Sidebar__Icon" src="isendu_files/conversations.svg" alt="Conversations"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Conversazioni</div></div><div class="Sidebar__UnseenMessageCounter"></div></div></div><div><div class="Sidebar__Element"><img class="Sidebar__Icon" src="isendu_files/automations.svg" alt="Automations"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Automazioni</div><button class="Sidebar__ChevronButton"><span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button></div></div><div class="Sidebar__SubMenu" style="height: 0px;"><div class="Sidebar__SubElement">Ordini</div><div class="Sidebar__SubElement">Email transazionali</div><div class="Sidebar__SubElement">WhatsApp transazionali</div></div></div><div><div class="Sidebar__Element"><img class="Sidebar__Icon" src="isendu_files/customer_list.svg" alt="Contact List"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Clienti</div></div></div></div><div><div class="Sidebar__Element Sidebar__Element--open"><img class="Sidebar__Icon" src="isendu_files/integrations.svg" alt="Integrations"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Integrazioni</div><button class="Sidebar__ChevronButton"><span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button></div></div><div class="Sidebar__SubMenu" style="height: 0px;"><div class="Sidebar__SubElement">Negozi</div><div class="Sidebar__SubElement">Corrieri</div><div class="Sidebar__SubElement">isendu API</div><div class="Sidebar__SubElement">App</div></div></div><div><div class="Sidebar__Element"><img class="Sidebar__Icon" src="isendu_files/settings.svg" alt="Settings"><div class="Sidebar__Link Sidebar__Link--hidden"><div class="Sidebar__Link__Title">Impostazioni</div><button class="Sidebar__ChevronButton"><span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button></div></div><div class="Sidebar__SubMenu" style="height: 0px;"><div class="Sidebar__SubElement">Account</div><div class="Sidebar__SubElement">Azienda</div><div class="Sidebar__SubElement">Configurazione WhatsApp</div><div class="Sidebar__SubElement">Preferenze</div><div class="Sidebar__SubElement">Zebra</div><div class="Sidebar__SubElement">Indirizzi</div><div class="Sidebar__SubElement">Abbonamenti</div><div class="Sidebar__SubElement">Fatturazione</div></div></div></div><div class="SubscriptionsCounters SubscriptionsCounters--hidden"><div class="SubscriptionsCounters__Counters SubscriptionsCounters__Counters--hidden"><span class="ant-typography ant-typography-secondary mb-1"><strong>Piano Gold Mensile</strong></span><div class="flex align-center justify-between"><small><span class="ant-typography ant-typography-secondary">Spedizioni</span></small><small><span class="ant-typography ant-typography-secondary">158/∞</span></small></div><div class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default" role="progressbar"><div class="ant-progress-outer"><div class="ant-progress-inner" style="background-color: rgb(216, 215, 216);"><div class="ant-progress-bg" style="width: 5%; height: 8px; background: rgb(0, 186, 173);"></div></div></div></div><div class="flex align-center justify-between"><small><span class="ant-typography ant-typography-secondary">Conversazioni</span></small><small><span class="ant-typography ant-typography-secondary">135/1.500</span></small></div><div class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default" role="progressbar"><div class="ant-progress-outer"><div class="ant-progress-inner" style="background-color: rgb(216, 215, 216);"><div class="ant-progress-bg" style="width: 9%; height: 8px; background: rgb(0, 186, 173);"></div></div></div></div></div></div><button class="SubscriptionsCounters__UpgradeButton SubscriptionsCounters__UpgradeButton--collapsed"><img src="isendu_files/upgrade.svg"><span>Upgrade</span></button></aside><main class="DefaultLayout__ContentWrapper" style="background: rgb(255, 255, 255); padding-bottom: 60px;"><div class="DefaultLayout__Content Content_MaxWidth" style="margin: 0px;"><div class="ant-row ant-row-space-between ant-row-middle"><div class="ant-col flex align-center"><h2 class="ant-typography mb-0"><span class="ant-typography OrderTitle">Ordini</span></h2></div><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 8px;"><div class="ant-space-item" style=""><button data-testid="NewOrderButton" type="button" class="ant-btn ant-btn-primary"><span role="img" aria-label="plus" style="margin-right: 10px;" class="anticon anticon-plus"><svg viewBox="64 64 896 896" focusable="false" data-icon="plus" width="1em" height="1em" fill="currentColor" aria-hidden="true"><defs><style></style></defs><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"></path></svg></span>Nuovo ordine</button></div><div class="ant-space-item"><button type="button" class="ant-btn ant-btn-default">Importa via .CSV</button></div></div></div><div class="ant-divider ant-divider-horizontal mt-1 mb-2 w-full" role="separator"></div><div class="ant-row ant-row-space-between ant-row-middle mt-2"><div class="ant-col flex align-center"><div class="flex align-center flex-wrap" data-testid="TabHeader"><div style="gap: 8px;" class="flex align-center"><button id="incoming_orders" type="button" class="ant-btn ant-btn-link orders-button active"><div style="display: flex; gap: 5px; align-items: center;"><div>In entrata</div><div class="orders-chips active">12</div></div></button><button type="button" class="ant-btn ant-btn-link orders-button"><div style="display: flex; gap: 5px; align-items: center;"><div>Etichetta generata</div><div class="orders-chips">47</div></div></button><button type="button" class="ant-btn ant-btn-link orders-button"><div style="display: flex; gap: 5px; align-items: center;"><div>In transito</div><div class="orders-chips">16</div></div></button><button type="button" class="ant-btn ant-btn-link orders-button"><div style="display: flex; gap: 5px; align-items: center;"><div>Eccezione</div><div class="orders-chips exception-chip">9</div></div></button><button type="button" class="ant-btn ant-btn-link orders-button"><div style="display: flex; gap: 5px; align-items: center;"><div>Consegnato</div><div class="orders-chips">72</div></div></button><div class="orders-filter-indicator" style="width: 118px; transform: translate3d(calc(0px), 0px, 0px);"></div></div><div class="ant-divider ant-divider-vertical mr-1 ml-1" style="height: 25px;" role="separator"></div><button type="button" class="ant-btn ant-btn-text orders-button  mr-1">Tutti gli ordini</button><button type="button" class="ant-btn ant-btn-text orders-button">Archiviato</button></div></div></div><div class="ant-divider ant-divider-horizontal mt-1 mb-2 w-full" role="separator"></div><div class="ant-row ant-row-space-between ant-row-top ordersList-filtersRow"><div class="ant-col ordersList-filtersCol"><span class="ant-input-affix-wrapper orders-list-searchFor"><span class="ant-input-prefix"><span role="img" aria-label="search" style="color: rgb(192, 192, 192); margin-right: 8px;" class="anticon anticon-search"><svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></span></span><input placeholder="Cerca in ordini in entrata..." data-testid="OrdersFilterInput" class="ant-input" type="text"><span class="ant-input-suffix"><span class="ant-input-clear-icon ant-input-clear-icon-hidden" role="button" tabindex="-1"><span role="img" aria-label="close-circle" class="anticon anticon-close-circle"><svg viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"></path></svg></span></span></span></span><button data-testid="FilterButton" type="button" class="ant-btn ant-btn-default FilterButton pt-0 pb-0 ml-1 false"><span class="ant-typography">Filtri</span><span role="img" aria-label="filter" class="anticon anticon-filter ml-2"><svg viewBox="64 64 896 896" focusable="false" data-icon="filter" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M880.1 154H143.9c-24.5 0-39.8 26.7-27.5 48L349 597.4V838c0 17.7 14.2 32 31.8 32h262.4c17.6 0 31.8-14.3 31.8-32V597.4L907.7 202c12.2-21.3-3.1-48-27.6-48zM603.4 798H420.6V642h182.9v156zm9.6-236.6l-9.5 16.6h-183l-9.5-16.6L212.7 226h598.6L613 561.4z"></path></svg></span></button><button data-testid="QuickFiltersButton" type="button" class="ant-btn ant-btn-default FilterButton pt-0 pb-0 ml-1 false"><span class="ant-typography">Filtri rapidi</span><span role="img" aria-label="thunderbolt" class="anticon anticon-thunderbolt ml-2"><svg viewBox="64 64 896 896" focusable="false" data-icon="thunderbolt" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M848 359.3H627.7L825.8 109c4.1-5.3.4-13-6.3-13H436c-2.8 0-5.5 1.5-6.9 4L170 547.5c-3.1 5.3.7 12 6.9 12h174.4l-89.4 357.6c-1.9 7.8 7.5 13.3 13.3 7.7L853.5 373c5.2-4.9 1.7-13.7-5.5-13.7zM378.2 732.5l60.3-241H281.1l189.6-327.4h224.6L487 427.4h211L378.2 732.5z"></path></svg></span></button></div><div style="flex: 1 1 0%;" class="ant-col flex justify-end"><div id="tablePagination.pagination.arrows"><ul class="ant-pagination antd-pagination-hide-numbers"><li title="Pagina precedente" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></span></button></li><li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"><a rel="nofollow">1</a></li><li title="Pagina successiva" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></button></li></ul></div></div></div><div class="ant-table-wrapper OrdersTable"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><div class="ant-table ant-table-layout-fixed"><div class="ant-table-container"><div class="ant-table-content"><table style="table-layout: fixed;"><colgroup><col class="ant-table-selection-col"><col style="width: 50px;"><col style="width: 185px;"><col><col><col><col><col style="width: 220px;"></colgroup><thead class="ant-table-thead"><tr><th class="ant-table-cell ant-table-selection-column"><div class="ant-table-selection"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input aria-label="Select all" class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></div></th><th class="ant-table-cell OrderList__StatusCellWrapper"></th><th title="" aria-label="" class="ant-table-cell ant-table-cell-ellipsis ant-table-column-has-sorters" tabindex="0"><div class="ant-table-column-sorters"><span class="ant-table-column-title">Ordini</span><span class="ant-table-column-sorter ant-table-column-sorter-full"><span class="ant-table-column-sorter-inner"><span role="presentation" aria-label="caret-up" class="anticon anticon-caret-up ant-table-column-sorter-up"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-up" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.9 689L530.5 308.2c-9.4-10.9-27.5-10.9-37 0L165.1 689c-12.2 14.2-1.2 35 18.5 35h656.8c19.7 0 30.7-20.8 18.5-35z"></path></svg></span><span role="presentation" aria-label="caret-down" class="anticon anticon-caret-down ant-table-column-sorter-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></span></span></div></th><th class="ant-table-cell ant-table-cell-ellipsis">Destinatario</th><th class="ant-table-cell ant-table-cell-ellipsis">Prodotti</th><th class="ant-table-cell ant-table-cell-ellipsis">Pacchi</th><th class="ant-table-cell ant-table-cell-ellipsis">Corrieri</th><th class="ant-table-cell orders-list-actions"></th></tr></thead><tbody class="ant-table-tbody"><tr data-row-key="o-61a4ebd3-44b3-4d45-9778-79fe79b8fb47" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/ebay.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">15-10275-12746</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 14:52">11/07/23 · 14:52</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><button style="max-width: 100%; cursor: pointer;" type="button" class="ant-btn ant-btn-default ant-btn-sm notes-popover-button"><span role="img" aria-label="file-text" style="margin-right: -5px;" class="anticon anticon-file-text"><svg viewBox="64 64 896 896" focusable="false" data-icon="file-text" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM504 618H320c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM312 490v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H320c-4.4 0-8 3.6-8 8z"></path></svg></span><span class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line" style="max-width: 100%;">Nota cliente</span></button></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Alessio Moncada</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">roma</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">RM 00143</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/$_1.JPG"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>KIT FILTRI TAGLIANDO BOSCH + OLIO VW 0W30 LL VW POLO VI 1.0/1.5 TSI DAL 2017</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">98,48&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">EBAY</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-4ca4ccf5-286d-423c-b9ed-b67f426ccb37" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">171-5852352-2059509</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 14:10">11/07/23 · 14:10</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Augusta Di Mella</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Cisterna di latina</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">LT 04012</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/51YMzAYcZWL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>Textar 2485201 Kit Pastiglie Freno, Freno A Disco</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">67,59&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-4b58f740-de21-4155-bcb5-54ef00848ac0" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">171-2945027-2637957</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 14:09">11/07/23 · 14:09</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Arco Andrea</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">milano</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">MI 20139</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/21WRe6lZmyL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>Repsol 25W60 High Mileage API SL 4 Litri</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">44,19&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-26402cd6-7412-41fe-888b-962c38c2bde6" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/ebay.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">24-10284-79464</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 13:17">11/07/23 · 13:17</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Federico Sgrò</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Cordenons</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">PN 33084</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/$T2eC16h,!ykE9s7tye1hBRlk9vCMMQ~~60_1.JPG"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>KIT ACCENSIONE BOBINE CANDELE CAVI FIAT PUNTO 1.2 8V 1200 DAL 99&gt;03 188A4000</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">75,23&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">EBAY</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-c7721ea0-06ee-457b-8d1f-b87748eeb084" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">404-8348597-4824363</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 11:21">11/07/23 · 11:21</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>simone morati</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span><span role="img" aria-label="warning" style="margin-right: 4px; color: rgb(250, 173, 20);" class="anticon anticon-warning"><svg viewBox="64 64 896 896" focusable="false" data-icon="warning" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z"></path></svg></span>Carpenedolo</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">BS 25013</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/51IRBeKPLHL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>CORA COADB10L AdBlue ISO 22241 Tanica 10 L con Beccuccio</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">29,90&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-4c603607-0843-44b2-bb25-fda5c6dd1c41" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">405-6528359-8386712</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 10:42">11/07/23 · 10:42</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Giuseppina MARCHETTO</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">TRISSINO</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">VI 36070</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/61CDtAxutnL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>Olio motore Motul 710&nbsp;2T, 4&nbsp;litri</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">60,90&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-5e132244-2b2f-4d11-975e-059ea3e11e2b" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">403-4038175-9813905</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 09:43">11/07/23 · 09:43</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>Divas Cafè</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span><span role="img" aria-label="warning" style="margin-right: 4px; color: rgb(250, 173, 20);" class="anticon anticon-warning"><svg viewBox="64 64 896 896" focusable="false" data-icon="warning" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z"></path></svg></span>Marina di Carrara</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">MS 54033</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/31aDuNHuIcL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>Motore
+ Olio Motul Syn 710&nbsp;-&nbsp;2&nbsp;T 
+4L&nbsp;-&nbsp;714.00.91&nbsp;-&nbsp;MOTUL&nbsp;-&nbsp;litri prezzo 
+19,71&nbsp;&amp; # x20AC; -</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">57,80&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-8b014404-a187-4b09-98f0-52376d13d17f" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/ebay.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">18-10272-81146</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 09:10">11/07/23 · 09:10</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>fabio terenzi</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">montesilvano</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">PE 65015</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/$_1_002.JPG"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>KIT FILTRI CANDELE OLIO TAGLIANDO FIAT PUNTO (176_) 1.2 1200 75</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">78,85&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">EBAY</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-bafb8745-84b3-465e-9297-36383b62dfeb" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/amazon.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">171-1107196-3296355</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="11/07/23 · 08:58">11/07/23 · 08:58</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>jan martin vinatzer</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span><span role="img" aria-label="warning" style="margin-right: 4px; color: rgb(250, 173, 20);" class="anticon anticon-warning"><svg viewBox="64 64 896 896" focusable="false" data-icon="warning" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z"></path></svg></span>selva gardena</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">BZ 39048</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/710fEDDx0SL.jpg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>H/Davidson XL 1200 N Sportster Nightster MBTX12U batteria moto 2008-2010</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">74,90&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Standard</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-7bd39fc2-3c7a-47ef-9970-4bf32375b340" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/ebay.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">07-10270-88993</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="09/07/23 · 14:58">09/07/23 · 14:58</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>giancarlo andreis</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span><span role="img" aria-label="warning" style="margin-right: 4px; color: rgb(250, 173, 20);" class="anticon anticon-warning"><svg viewBox="64 64 896 896" focusable="false" data-icon="warning" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M464 720a48 48 0 1096 0 48 48 0 10-96 0zm16-304v184c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V416c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zm475.7 440l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48zm-783.5-27.9L512 239.9l339.8 588.2H172.2z"></path></svg></span>brandico</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">BS 25030</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/$_1_003.JPG"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span>x2&nbsp;<span>SIA 4047/R LIQUIDO RADIATORI -40 PROTETTIVO ANTICONGELANTE INIBITO ROSSO 1 LITR</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">27,64&nbsp;€</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">EBAY</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-699e359f-40de-4855-957e-f6f968e9ada6" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/logo_manual_order.png"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">68e9ada6</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="06/07/23 · 13:24">06/07/23 · 13:24</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>ALDO ROMANO</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Novara</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">NO 28100</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>MATERIALE VARIO</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">255,12&nbsp;€</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">TNT Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">express - domestic</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr><tr data-row-key="o-9e5a2889-fa70-4dd2-9847-3ae8bd069d5f" class="ant-table-row ant-table-row-level-0 orders-list-row"><td class="ant-table-cell ant-table-selection-column"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input class="ant-checkbox-input" type="checkbox"><span class="ant-checkbox-inner"></span></span></label></td><td class="ant-table-cell OrderList__StatusCellWrapper"><div class="OrderList__StatusCell" style="border-left: 2px solid rgb(0, 167, 131);"><svg width="20" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 200" overflow="visible" xml:space="preserve" fill="#006e6e"><g transform="matrix(1 0 0 1 -198 -330 )"><path d="M398,366.6c0-4.1-3.6-7.3-8-7.3s-179.6,0-184,0s-8,3.3-8,7.3v45.8c0,1,0.9,1.8,2,1.8h10V493c0,4.1,3.6,7.3,8,7.8h160 c4.4-0.5,8-3.7,8-7.8v-78.8h10c1.1,0,2-0.8,2-1.8V366.6z M289.5,398.7H215v-23.8h74.5V398.7z M227,484.8v-70.5h62.5v70.5H227z M369,414.3v70.5h-62.5v-70.5H369z M381,374.9v23.8h-74.5v-23.8H381z"></path></g></svg></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/logo_manual_order.png"></span></div><div class="info"><div class="primary"><span class="ant-typography label ellipsis"><span class="ant-typography OrderCell OrderIdButton">bd069d5f</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography" title="06/07/23 · 13:02">06/07/23 · 13:02</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"></span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><span><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="hoverable"><span>FABIO BORRONI</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">Morrovalle</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">MC 62010</span></div></div></div></span></td><td class="ant-table-cell ant-table-cell-ellipsis"><div class="enhanced-cell-container small"><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span><span>MATERIALE VARIO</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis">65,12&nbsp;€</span></div></div></div></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container "><div class="info"><div class="link"><span class="ant-typography ellipsis"><div class="ant-space ant-space-horizontal ant-space-align-center package-parcel-name" style="gap: 8px;"><div class="ant-space-item"><a class="ant-typography break-spaces" title="Pacco Standard" id="commons.components.packagesInfo.link.parcelName"><span class="hoverable">Pacco Standard</span></a></div></div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography break-spaces" title="30x20x30 cm · 1.00 kg">30x20x30 cm · 1.00 kg</span></span></div></div></div></a></td><td class="ant-table-cell ant-table-cell-ellipsis"><a class="ant-typography"><div class="enhanced-cell-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/gls.svg"></span></div><div class="info"><div class="link"><span class="ant-typography label ellipsis"><span class="ant-typography break-spaces"><span class="hoverable">GLS Italy</span></span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary label ellipsis"><span class="ant-typography break-spaces" style="text-transform: capitalize;">flex delivery</span></span></div></div></div></a></td><td class="ant-table-cell orders-list-actions"><div class="flex flex-column"><div class="ant-space-compact ant-space-compact-block ant-dropdown-button OrderListActions"><button id="createShipmentButton.button.crateShipment" type="button" class="ant-btn ant-btn-default ant-btn-compact-item ant-btn-compact-first-item"><span> </span><span> </span>Crea spedizione</button><button style="min-width: 35px;" type="button" class="ant-btn ant-btn-default ant-btn-icon-only ant-btn-compact-item ant-btn-compact-last-item ant-dropdown-trigger OrderListActionsToggle"><span role="img" aria-label="caret-down" style="font-size: 14px;" class="anticon anticon-caret-down"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z"></path></svg></span></button></div></div></td></tr></tbody></table></div></div></div><ul class="ant-pagination ant-table-pagination ant-table-pagination-right antd-pagination-hide"><li title="Pagina precedente" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></span></button></li><li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"><a rel="nofollow">1</a></li><li title="Pagina successiva" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></button></li></ul></div></div></div><div class="ant-row ant-row-end"><div class="ant-col bottom-table-pagination"><ul class="ant-pagination antd-pagination-hide-numbers"><li title="Pagina precedente" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></span></button></li><li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0"><a rel="nofollow">1</a></li><li title="Pagina successiva" class="ant-pagination-next ant-pagination-disabled" aria-disabled="true"><button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="disabled"><span role="img" aria-label="right" class="anticon anticon-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg></span></button></li><li class="ant-pagination-options"><div class="ant-select ant-pagination-options-size-changer ant-select-single ant-select-show-arrow" aria-label="dimensioni della pagina"><div class="ant-select-selector"><span class="ant-select-selection-search"><input type="search" autocomplete="off" class="ant-select-selection-search-input" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="rc_select_5_list" aria-autocomplete="list" aria-controls="rc_select_5_list" aria-activedescendant="rc_select_5_list_0" aria-label="dimensioni della pagina" readonly="readonly" unselectable="on" style="opacity: 0;" id="rc_select_5"></span><span class="ant-select-selection-item" title="100 ordini per pagina">100 ordini per pagina</span></div><span class="ant-select-arrow" style="user-select: none;" unselectable="on" aria-hidden="true"><span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></span></div></li></ul></div></div><div class="InPageHelpDrawerOpenButton"><span role="img" aria-label="question-circle" class="anticon anticon-question-circle"><svg viewBox="64 64 896 896" focusable="false" data-icon="question-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M623.6 316.7C593.6 290.4 554 276 512 276s-81.6 14.5-111.6 40.7C369.2 344 352 380.7 352 420v7.6c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V420c0-44.1 43.1-80 96-80s96 35.9 96 80c0 31.1-22 59.6-56.1 72.7-21.2 8.1-39.2 22.3-52.1 40.9-13.1 19-19.9 41.8-19.9 64.9V620c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-22.7a48.3 48.3 0 0130.9-44.8c59-22.7 97.1-74.7 97.1-132.5.1-39.3-17.1-76-48.3-103.3zM472 732a40 40 0 1080 0 40 40 0 10-80 0z"></path></svg></span></div></div></main></div></section></div><script type="text/javascript" id="">var beamer_config={product_id:"LicCBhEK35785",selector:".beamerButton",button:!1,lazy:!0};</script>
+<script type="text/javascript" id="" src="isendu_files/beamer-embed.js"></script><script type="text/javascript" id="hs-script-loader" src="isendu_files/6533935.js"></script><script type="text/javascript" id="" src="isendu_files/chargebee.js"></script><script type="text/javascript" id="">(function(b,d,e,c,a){b=b[a]=b[a]||{q:[],onReady:function(f){b.q.push(f)}};a=d.createElement(e);a.async=1;a.src=c;c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","https://www.datadoghq-browser-agent.com/datadog-rum-v4.js","DD_RUM");DD_RUM.onReady(function(){DD_RUM.init({clientToken:"pubc55e7ea4c1aa20eea4414a35b6401edd",applicationId:"ec86eb5e-c290-41e0-b3c1-3f1a4d15f7fa",site:"datadoghq.eu",service:"yancy-frontend",env:"prod",sampleRate:100,trackInteractions:!0})});</script>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:2882534,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script type="text/javascript" id="">(function(b,d,e,c,a){b=b[a]=b[a]||{q:[],onReady:function(f){b.q.push(f)}};a=d.createElement(e);a.async=1;a.src=c;c=d.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","https://www.datadoghq-browser-agent.com/datadog-rum-v4.js","DD_RUM");DD_RUM.onReady(function(){DD_RUM.init({clientToken:"pubc55e7ea4c1aa20eea4414a35b6401edd",applicationId:"ec86eb5e-c290-41e0-b3c1-3f1a4d15f7fa",site:"datadoghq.eu",service:"yancy-frontend",env:"prod",sampleRate:100,trackInteractions:!0})});</script>
+<script type="text/javascript" id="">Chargebee.init({site:"isendu",publishableKey:"live_KPYm1WGr7MTrrqvYRcocuSVUTHcdrXsIcd5"});</script><div id="cb-container" style="position: fixed; inset: 0px; z-index: 2147483647; display: none; overflow-y: hidden;"><div id="cb-loader" style="z-index: 99999; visibility: hidden; transition: all 0.5s ease 0s; background: rgb(244, 245, 249); position: absolute; left: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 9px 0px, rgba(0, 0, 0, 0.15) 0px 20px 30px 1px, rgba(0, 0, 0, 0.15) 0px 40px 40px 1px;"><div style="overflow: hidden;"><div id="cb-loader-header" style="padding: 12px 40px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; text-align: center; min-height: 64px; box-sizing: border-box;"><div style="min-height: 46px; display: flex; align-items: center; margin-top: 1px;"><img id="cb-header-logo" style="max-height: 40px; max-width: 240px; vertical-align: middle; width: auto; margin: 3px auto;"></div></div><div id="cb-loading-bar" style="height: 2px; background: rgb(72, 231, 154); transition-duration: 0.5s; transition-timing-function: ease-in-out; visibility: hidden;"></div><div style="padding: 24px 36px;"><div class="cb-placeholder" id="cb-placeholder"><div style="height: 20px; width: 100px; background: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(221, 221, 221) 18%, rgb(238, 238, 238) 33%) 0% 0% / 800px 104px; margin-bottom: 10px;" class="wavering"></div><div style="height: 40px; width: 200px; background: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(221, 221, 221) 18%, rgb(238, 238, 238) 33%) 0% 0% / 800px 104px; margin-bottom: 10px;" class="wavering"></div><div style="height: 10px; width: 150px; background: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(221, 221, 221) 18%, rgb(238, 238, 238) 33%) 0% 0% / 800px 104px; margin-bottom: 10px;" class="wavering"></div><div style="height: 10px; width: 150px; background: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(221, 221, 221) 18%, rgb(238, 238, 238) 33%) 0% 0% / 800px 104px; margin-bottom: 10px;" class="wavering"></div><div style="height: 10px; width: 150px; background: linear-gradient(to right, rgb(238, 238, 238) 8%, rgb(221, 221, 221) 18%, rgb(238, 238, 238) 33%) 0% 0% / 800px 104px; margin-bottom: 10px;" class="wavering"></div></div><div id="cb-error" style="font-size: 18px; line-height: 27px; color: rgb(248, 48, 48); text-align: center; display: none;"></div></div><div id="cb-modal-close" style="position: absolute; background: rgb(57, 57, 65); height: 24px; width: 24px; border-radius: 50%; right: -12px; top: -12px; font-size: 20px; color: rgba(255, 255, 255, 0.7); text-align: center; cursor: pointer; display: table; font-weight: 400; line-height: 24px;">×</div></div></div><iframe id="cb-frame" style="width: 100%; height: 100%; z-index: 999999; visibility: hidden; position: relative; border: 0px none;"></iframe><iframe id="cb-master-frame" name="cb-master-frame" src="isendu_files/master.html" style="margin: 0px; padding: 0px; border: medium none; overflow: hidden; display: block; min-width: 100%; width: 1px; height: 1.2em;"></iframe></div><iframe id="_hjSafeContext_57390821" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="isendu_files/a.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="beamerUtilities" src="isendu_files/utilities.html" scrolling="no" width="0" height="0" frameborder="0"></iframe><script type="text/javascript" id="">(function(e,f,c){var b=function(){b.c(arguments)};b.q=[];b.c=function(a){b.q.push(a)};var g=function(){var a=c.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://code.Upscope.io/JF39x4c4rS.js";var d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(a,d)};"function"!==typeof f&&(e.Upscope=b,g())})(window,window.Upscope,document);Upscope("init");</script><div id="upscope___remote-control-container" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; contain-intrinsic-block-size: initial; contain-intrinsic-inline-size: initial; background: initial; background-blend-mode: initial; border: initial; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: block; position: initial; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; container: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: initial; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; font-palette: initial; -moz-osx-font-smoothing: initial; visibility: initial; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; forced-color-adjust: initial; -webkit-text-security: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; page: initial; padding: initial; scroll-padding: initial; inset: initial; z-index: initial; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: initial; min-width: initial; max-width: initial; height: initial; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; contain-intrinsic-size: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"><div id="upscope___overlay"></div><div id="upscope___drag-protection"></div></div><div id="upscope___promo-link-container" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; contain-intrinsic-block-size: initial; contain-intrinsic-inline-size: initial; background: initial; background-blend-mode: initial; border: initial; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: block; position: initial; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; scroll-snap-stop: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; container: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; scrollbar-gutter: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: initial; box-shadow: initial; clip: initial; filter: initial; backdrop-filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; font-palette: initial; -moz-osx-font-smoothing: initial; visibility: initial; writing-mode: initial; text-orientation: initial; print-color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; hyphenate-character: initial; forced-color-adjust: initial; -webkit-text-security: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; color-scheme: initial; scrollbar-color: initial; list-style: initial; quotes: initial; margin: initial; overflow-clip-margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; page: initial; padding: initial; scroll-padding: initial; inset: initial; z-index: initial; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: initial; min-width: initial; max-width: initial; height: initial; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; contain-intrinsic-size: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; d: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; transition: initial; animation: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"><div id="upscope___promo-link"><a id="upscope___promo-link__upscope-link" href="https://upscope.com/?utm_source=upscope&amp;utm_campaign=promo-link&amp;utm_audience=app.isendu.com" target="_blank" rel="noopener"><span id="upscope___promo-link__screensharing-by">Screensharing by </span><span id="upscope___promo-link__thank-you">Thank you for using </span><span id="upscope___promo-link__icon">Upscope</span><span id="upscope___promo-link__learn-more">. Click to learn more.</span></a><a id="upscope___promo-link__stop-button" href="#">End session</a></div></div><div><div class="ant-drawer ant-drawer-bottom FullPageDrawer OrderDetailDrawer ant-drawer-open" tabindex="-1"><div class="ant-drawer-mask"></div><div tabindex="0" style="width: 0px; height: 0px; overflow: hidden; outline: none; position: absolute;" aria-hidden="true" data-sentinel="start"></div><div class="ant-drawer-content-wrapper" style="height: 100%;"><div class="ant-drawer-content" aria-modal="true" role="dialog"><div class="ant-drawer-wrapper-body"><div class="ant-drawer-header"><div class="ant-drawer-header-title"><button type="button" aria-label="Close" class="ant-drawer-close"><span role="img" aria-label="close" class="anticon anticon-close"><svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg></span></button><div class="ant-drawer-title"><div class="order-nav-bar"><div class="ant-row ant-row-space-around ant-row-middle order-nav-bar-row"><div class="ant-col ant-col-9">Dettaglio ordine</div><div class="ant-col ant-col-6"><div class="ant-row ant-row-space-around ant-row-middle"><div class="ant-col ant-col-24 text-align-center"><div class="text-align-center DetailId"><span class="ant-typography">#15-10275-12746</span></div></div></div></div><div class="ant-col ant-col-9"><div class="ant-space ant-space-horizontal ant-space-align-center NavBarActions" style="gap: 8px;"><div class="ant-space-item" style=""><button id="navBarActions.button.createShipment" type="button" class="ant-btn ant-btn-default NavBarActions__CreateShipmentButton NavBarActions__Button"><span> </span><span> </span>Crea spedizione</button></div><div class="ant-space-item" style=""><button id="navBarActions.button.print" type="button" class="ant-btn ant-btn-primary ant-dropdown-trigger NavBarActions__PrintButton NavBarActions__Button navbar-print-dropdown">Stampa<span> </span><span role="img" aria-label="down" class="anticon anticon-down"><svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button></div><div class="ant-space-item"><button id="navBarActions.button.actionDropdown" type="button" class="ant-btn ant-btn-primary ant-dropdown-trigger NavBarActions__ActionDropdownButton NavBarActions__Button"><span role="img" aria-label="ellipsis" class="anticon anticon-ellipsis"><svg viewBox="64 64 896 896" focusable="false" data-icon="ellipsis" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"></path></svg></span></button></div></div></div></div></div></div></div></div><div class="ant-drawer-body"><div data-testid="OrderDetailDrawer" class="ant-row OrderDetail_Content"><div class="ant-col ant-col-24"><div class="ant-row pb-1"><div class="ant-col ant-col-8 pr-1"><div class="ant-card ant-card-bordered sender_receiver_card"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Mittente</strong></span></div><div class="ant-card-extra"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 16px;"><div class="ant-space-item"><div id="orderDetailSenderReceiver.clickable.Select"><span class="ant-typography ant-typography-secondary select_sender_address">Seleziona</span></div></div></div></div></div></div><div class="ant-card-body"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row"><div class="ant-col"><span class="ant-typography"><strong>AUTOMARKET PRO, MATTEO MACALUSO</strong></span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Viale Lino Zanussi 4</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Pordenone, PN, 33170</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">IT</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">info@automarket-pro.com</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">3664001092</span></div></div></div></div></div></div></div><div class="ant-col ant-col-8 pr-1"><div class="ant-card ant-card-bordered sender_receiver_card"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Indirizzo di spedizione</strong></span></div><div class="ant-card-extra"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 16px;"><div class="ant-space-item"><a id="orderDetailSenderReceiver.clickable.addEdit">Modifica</a></div></div></div></div></div><div class="ant-card-body"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row"><div class="ant-col"><span class="ant-typography"><strong>Alessio Moncada</strong></span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Via Kafka 25</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">roma, RM, 00143</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">IT</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">0c4509ff2c2751fa5694@members.ebay.com</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">+393497507781</span></div></div></div></div></div></div></div><div class="ant-col ant-col-8 pr-1"><div class="ant-card ant-card-bordered sender_receiver_card"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Indirizzo di fatturazione</strong></span></div><div class="ant-card-extra"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 16px;"></div></div></div></div><div class="ant-card-body"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row"><div class="ant-col"><span class="ant-typography"><strong>Alessio Moncada</strong></span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Via Kafka 25</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">roma, RM, 00143</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">IT</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">0c4509ff2c2751fa5694@members.ebay.com</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography ant-typography-secondary">+393497507781</span></div></div></div></div></div></div></div></div></div><div class="ant-col ant-col-16 pr-1"><div class="ant-row pb-1"><div class="ant-col ant-col-24"><div class="ant-card ant-card-bordered"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Contenuto dell'ordine</strong></span></div></div></div><div class="ant-card-body"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-table-wrapper OrderDetailTable"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><div class="ant-table"><div class="ant-table-container"><div class="ant-table-content"><table style="table-layout: fixed;"><colgroup><col style="width: 55%;"><col style="width: 15%;"><col style="width: 15%;"><col style="width: 15%;"></colgroup><tbody class="ant-table-tbody"><tr class="ant-table-row ant-table-row-level-0"><td class="ant-table-cell line-number ant-table-cell-ellipsis"><div class="enhanced-cell-container "><div class="image"><div class="OrderDetailTable__OrderItemImage"><span class="ant-avatar ant-avatar-square ant-avatar-image default-border"><div class="ant-image"><img class="ant-image-img order-content__img" src="isendu_files/$_1.JPG"><div class="ant-image-mask"><span role="img" aria-label="eye" class="anticon anticon-eye"><svg viewBox="64 64 896 896" focusable="false" data-icon="eye" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"></path></svg></span></div></div></span></div></div><div class="info"><div class="primary"><span class="ant-typography ellipsis"><div class="line_number_table table-row-title text-primary">KIT FILTRI TAGLIANDO BOSCH + OLIO VW 0W30 LL VW POLO VI 1.0/1.5 TSI DAL 2017</div></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography ant-typography-secondary text-secondary">KITFILPOLO1</span></span></div></div></div></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">1</span></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">-</span></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">98,48&nbsp;€</span></td></tr><tr class="ant-table-row ant-table-row-level-0"><td class="ant-table-cell line-number ant-table-cell-ellipsis"><span class="ant-typography ant-typography-secondary text-secondary">Subtotale</span></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">1</span></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">-</span></td><td class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">98,48&nbsp;€</span></td></tr><tr class="ant-table-row ant-table-row-level-0"><td class="ant-table-cell line-number ant-table-cell-ellipsis"><span class="ant-typography ant-typography-secondary text-secondary">Metodo di pagamento</span></td><td colspan="3" class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">EBAY</span></td><td class="ant-table-cell"></td><td class="ant-table-cell"></td></tr><tr class="ant-table-row ant-table-row-level-0"><td class="ant-table-cell line-number ant-table-cell-ellipsis"><span class="ant-typography ant-typography-secondary text-secondary">Note del cliente</span></td><td colspan="3" class="ant-table-cell"><span class="ant-typography ant-typography-secondary text-secondary">ID oggetto: 114787897182
+Veicolo dell'acquirente: VW Polo 2019 AE1, AW1, BZ1 1.0 TSI 999 ccm, 70 KW, 95 PS
+</span></td><td class="ant-table-cell"></td><td class="ant-table-cell"></td></tr><tr class="ant-table-row ant-table-row-level-0"><td class="ant-table-cell line-number ant-table-cell-ellipsis"><span class="ant-typography text-primary table-row-title">Totale</span></td><td class="ant-table-cell"></td><td class="ant-table-cell"></td><td class="ant-table-cell"><span class="ant-typography text-primary table-row-title">98,48&nbsp;€</span></td></tr></tbody></table></div></div></div></div></div></div></div></div></div></div></div></div><div class="ant-row pb-1"><div class="ant-col ant-col-24"><div class="ant-card ant-card-bordered"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Informazioni pacco</strong></span></div><div class="ant-card-extra"><a class="ant-typography" id="orderDetailPackageInfo.link.addEdit">Modifica</a></div></div></div><div class="ant-card-body"><div class="ant-list ant-list-split ant-list-grid"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><div class="ant-row"><div style="width: 50%; max-width: 50%;"><div style="flex: 1 1 auto;" class="ant-col"><div class="ant-list-item"><div class="ant-list-item-meta"><div class="ant-list-item-meta-avatar"><div class="shopping_cart_wrapper"><span role="img" aria-label="shopping-cart" class="anticon anticon-shopping-cart"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="shopping-cart" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M922.9 701.9H327.4l29.9-60.9 496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 00-26.6-12.5l-632-2.1-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3 0 100 70.6h125.9L246 312.8l58.1 281.3-74.8 122.1a34.96 34.96 0 00-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 102.43 0 00-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 00-35.4-35.2zM305.7 253l575.8 1.9-56.4 315.8-452.3.8L305.7 253zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6zm325.1 0c-17.4 0-31.6-14.2-31.6-31.6 0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 01-31.6 31.6z"></path></svg></span></div></div><div class="ant-list-item-meta-content"><h4 class="ant-list-item-meta-title">Pacco Standard</h4><div class="ant-list-item-meta-description">30x20x30&nbsp;cm&nbsp;·&nbsp;1&nbsp;kg</div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="ant-row pb-1"><div class="ant-col ant-col-24"><div class="ant-card ant-card-bordered"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Metodo di spedizione</strong></span></div><div class="ant-card-extra"><a class="ant-typography" id="orderDetailShippingMethod.clickable.addEdit">Modifica</a></div></div></div><div class="ant-card-body"><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-bottom: 20px;"><div class="ant-col ant-col-24"><span class="ant-typography"><strong>Info spedizione</strong></span></div></div><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row"><div class="ant-col ant-col-2"><span style="width: 40px; height: 40px; line-height: 40px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image default-border"><img src="isendu_files/tnt_it.svg"></span></div><div class="ant-col ant-col-22"><div class="ant-row"><div class="ant-col"><span class="ant-typography">Corriere:</span> <span class="ant-typography ant-typography-secondary">TNT Italy</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Servizio:</span> <span class="ant-typography ant-typography-secondary">Express - Domestic</span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Numero di tracking:</span> -</div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Pickup:</span> <span class="ant-typography ant-typography-secondary" title=""><strong>-</strong></span></div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Assicurazione:</span> -</div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Contrassegno:</span> -</div></div><div class="ant-row"><div class="ant-col"><span class="ant-typography">Note del corriere:</span> <span class="ant-typography ant-typography-secondary">-</span></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" style="border: medium none white;" role="separator"></div><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-row" style="margin-left: -8px; margin-right: -8px; row-gap: 24px;"><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-24"><span class="ant-typography"><strong>Stato dell'ordine</strong></span></div><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-24"><div class="ant-steps ant-steps-horizontal ant-steps-label-vertical ant-steps-dot"><div class="ant-steps-item ant-steps-item-process ant-steps-item-active"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><span class="ant-steps-icon-dot"></span></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">In entrata</div><div class="ant-steps-item-description"><span class="ant-typography" title="11/07/23 · 14:52">11/07/23<br>14:52</span></div></div></div></div><div class="ant-steps-item ant-steps-item-wait"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><span class="ant-steps-icon-dot"></span></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">Etichetta generata</div></div></div></div><div class="ant-steps-item ant-steps-item-wait"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><span class="ant-steps-icon-dot"></span></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">In Transito</div></div></div></div><div class="ant-steps-item ant-steps-item-wait"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><span class="ant-steps-icon-dot"></span></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">Consegnato</div></div></div></div></div></div></div></div></div><div class="ant-divider ant-divider-horizontal" style="border: medium none white;" role="separator"></div><div class="ant-row"><div class="ant-col ant-col-24"><div class="ant-table-wrapper"><div class="ant-spin-nested-loading"><div class="ant-spin-container"><div class="ant-table ant-table-empty"><div class="ant-table-container"><div class="ant-table-content"><table style="table-layout: auto;"><colgroup></colgroup><thead class="ant-table-thead"><tr><th class="ant-table-cell"><span class="ant-typography"><strong>Data</strong></span></th><th class="ant-table-cell"><span class="ant-typography"><strong>Localizzazione</strong></span></th><th class="ant-table-cell"><span class="ant-typography"><strong>Evento</strong></span></th><th class="ant-table-cell shippingDetail-description"><span class="ant-typography"><strong>Descrizione</strong></span></th></tr></thead><tbody class="ant-table-tbody"><tr class="ant-table-placeholder"><td colspan="4" class="ant-table-cell"><div class="ant-empty ant-empty-normal"><div class="ant-empty-image"><svg class="ant-empty-img-simple" width="64" height="41" viewBox="0 0 64 41" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 1)" fill="none" fill-rule="evenodd"><ellipse class="ant-empty-img-simple-ellipse" cx="32" cy="33" rx="32" ry="7"></ellipse><g class="ant-empty-img-simple-g" fill-rule="nonzero"><path d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"></path><path d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z" class="ant-empty-img-simple-path"></path></g></g></svg></div><div class="ant-empty-description">Non sono disponibili dettagli per questa spedizione</div></div></td></tr></tbody></table></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="ant-col ant-col-8 pr-1"><div class="ant-row mb-2" style="row-gap: 16px;"><div style="" class="ant-col ant-col-24"><div class="ant-card ant-card-bordered pb-2"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Riepilogo</strong></span></div></div></div><div class="ant-card-body"><div class="ant-row" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;"><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-12"><div class="meta-card-title"><span class="ant-typography">Ordine</span></div><div class="meta-card-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image"><img src="isendu_files/ebay.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography ellipsis"><span class="ant-typography" title="15-10275-12746">15-10275-12746</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography" title="11/07/23 · 14:52">11/07/23 · 14:52</span></span></div></div></div></div><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-12"><div class="meta-card-title"><span class="ant-typography">Stato</span></div><div class="meta-card-container small"><div class="badge"><span class="ant-badge ant-badge-status ant-badge-not-a-wrapper"><span class="ant-badge-status-dot ant-badge-status-success"></span></span></div><div class="info"><div class="primary"><span class="ant-typography ellipsis"><span class="ant-typography ant-typography-ellipsis ant-typography-single-line ant-typography-ellipsis-single-line" title="In entrata">In entrata</span></span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography ant-typography-secondary" title="11/07/23 · 14:52">11/07/23 · 14:52</span></span></div></div></div></div></div><div class="ant-row order-detail-summary-row" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;"><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-12"><div class="meta-card-title"><span class="ant-typography">Da</span></div><div class="meta-card-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography ellipsis"><span class="ant-typography" title="Pordenone">Pordenone</span></span></div></div></div></div><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-12"><div class="meta-card-title"><span class="ant-typography">A</span></div><div class="meta-card-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image"><img src="isendu_files/it.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography ellipsis"><span class="ant-typography" title="roma">roma</span></span></div></div></div></div></div><div class="ant-row summary-delivery-info-row" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;"><div style="padding-left: 8px; padding-right: 8px;" class="ant-col"><div class="meta-card-title"><span class="ant-typography">Corrieri</span></div><div class="meta-card-container small"><div class="image"><span style="width: 24px; height: 24px; line-height: 24px; font-size: 18px;" class="ant-avatar ant-avatar-square ant-avatar-image"><img src="isendu_files/tnt_it.svg"></span></div><div class="info"><div class="primary"><span class="ant-typography ellipsis">TNT Italy</span></div><div class="secondary"><span class="ant-typography ant-typography-secondary ellipsis"><span class="ant-typography" style="text-transform: capitalize;">Express - Domestic</span></span></div></div></div></div></div></div></div></div><div style="" class="ant-col ant-col-24"><div class="ant-card ant-card-bordered pb-2"><div class="ant-card-head"><div class="ant-card-head-wrapper"><div class="ant-card-head-title"><span class="ant-typography"><strong>Note ordine</strong></span></div><div class="ant-card-extra"><div class="ant-space ant-space-horizontal ant-space-align-center" style="gap: 16px;"><div class="ant-space-item"><a id="orderDetail.noteBox.addInternalNote">Aggiungi</a></div></div></div></div></div><div class="ant-card-body"><div class="ant-row" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;"><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-24"></div><div style="padding-left: 8px; padding-right: 8px;" class="ant-col ant-col-24"><div class="NoteBox"><div style="flex: 1 1 0%; font-size: 16px;"><div style="font-weight: 600;">Nota cliente:</div><div>ID oggetto: 114787897182
+Veicolo dell'acquirente: VW Polo 2019 AE1, AW1, BZ1 1.0 TSI 999 ccm, 70 KW, 95 PS
+</div></div><div><span class="NoteBox__CopyIcon"><span role="img" aria-label="copy" title="Copia" id="orderDetailNavBar.icon.copy" class="anticon anticon-copy"><svg viewBox="64 64 896 896" focusable="false" data-icon="copy" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"></path></svg></span></span></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div tabindex="0" style="width: 0px; height: 0px; overflow: hidden; outline: none; position: absolute;" aria-hidden="true" data-sentinel="end"></div></div></div></body></html>
