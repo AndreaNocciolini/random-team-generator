@@ -1,10 +1,10 @@
 <script setup>
-import TeamList from '../components/HomeViewComponents/TeamList.vue'
+import TeamList from '../components/TeamList.vue'
 </script>
 
 <template>
-  <main>
-    <div class="d-flex  justify-content-center p-3 mb-3">
+  <main class="h-100">
+    <div class="d-flex h-100 justify-content-center p-3 mb-3">
       <TeamList />
     </div>
   </main>

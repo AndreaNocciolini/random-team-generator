@@ -3,7 +3,7 @@ import NotFoundPage from '../components/NotFoundPage.vue'
 </script>
 
 <template>
-  <main>
+  <div>
     <NotFoundPage />
-  </main>
+  </div>
 </template>

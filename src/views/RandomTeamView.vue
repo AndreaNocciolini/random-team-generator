@@ -1,5 +1,5 @@
 <script setup>
-import RandomTeam from '../components/HomeViewComponents/RandomTeam.vue'
+import RandomTeam from '../components/RandomTeam.vue'
 </script>
 
 <template>

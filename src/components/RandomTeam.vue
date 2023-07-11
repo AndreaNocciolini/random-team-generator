@@ -1,18 +1,18 @@
 <script setup>
-import '../../assets/components/TeamList.scss'
+import '../assets/components/TeamList.scss'
 import Swal from 'sweetalert2'
 </script>
 
 
 <template>
     <div class="addPlayerModal">
-        <button class="btn btn-info" @click="generateTeam">Generate Random Team</button>
+        <button class="btn btn-outline-success m-1" @click="generateTeam">Generate Random Team</button>
     </div>
 
     <div v-if=this.team.length class="mb-5">
-        <ul class="list-group align-items-center list-group-numbered">
-            <li v-for="(player, i) in team" :key="i"
-                class="list-group-item d-flex justify-content-between align-items-start w-75">
+        <ul v-for="(team, i) in teams" :key="i" class="list-group align-items-center list-group-numbered mb-2">
+            <h3>TEAM #{{i + 1}}</h3>
+            <li v-for="(player, i) in team" :key="i" class="list-group-item d-flex justify-content-between align-items-start w-75">
                 <div class="ms-2 me-auto text-start">
                     <div class="text-start text-danger">{{ player }}</div>
                     {{ this.generateRole(i) }}
@@ -29,7 +29,8 @@ import Swal from 'sweetalert2'
 export default {
     data() {
         return {
-            team: [],
+            teams: [],
+            team: []
         };
     },
     methods: {
@@ -66,14 +67,14 @@ export default {
             const teamLength = 5;
 
             if (JSON.parse(localStorage.getItem("players")).length >= teamLength) {
-                this.loading = true;
                 this.team = [];
                 for (let index = 0; index < teamLength; index++) {
                     const player = this.getRandomItem(JSON.parse(localStorage.getItem("players")));
                     this.team.push(player);
                 }
+                this.teams.push(this.team);
+                localStorage.setItem("teams", JSON.stringify(this.teams));
                 localStorage.setItem("team", JSON.stringify(this.team));
-                this.loading = false;
             } else {
                 Swal.fire({
                     title: 'Not enough players!',

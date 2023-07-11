@@ -1,5 +1,5 @@
 <script setup>
-import '../../assets/components/TeamList.scss'
+import '../assets/components/TeamList.scss'
 import Swal from 'sweetalert2'
 </script>
 
@@ -14,8 +14,7 @@ import Swal from 'sweetalert2'
 
     <div v-if=this.players.length class="list justify-content-center align-items-center">
       <ul class="list">
-        <li v-for="(player, i) in players" :key="i"
-          class="d-flex align-items-center justify-content-between w-100 pe-3 m-1">
+        <li v-for="(player, i) in players" :key="i" class="d-flex align-items-center justify-content-between w-100 fs-4 pe-3 m-1">
           {{ player.length > 8 ? player.substring(0, 8) + "..." : player }} <button class="btn btn-outline-danger"
             @click="deletePlayer(i)">Remove</button>
         </li>
