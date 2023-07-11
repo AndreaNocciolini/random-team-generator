@@ -38,7 +38,7 @@ import Swal from 'sweetalert2'
 export default {
   data() {
     return {
-      teams: [],
+      teams: JSON.parse(localStorage.getItem('teams')) ? JSON.parse(localStorage.getItem('teams')) : [],
       team: []
     }
   },
@@ -88,7 +88,7 @@ export default {
         JSON.parse(localStorage.getItem('players')).length >= teamLength
       ) {
         this.team = []
-        const availablePlayer = JSON.parse(localStorage.getItem('players'))
+        const availablePlayers = JSON.parse(localStorage.getItem('players'))
           .map((player) => {
             return !this.teams.flat().includes(player) ? player : undefined
           })
@@ -96,18 +96,18 @@ export default {
             console.log(player)
             return player !== undefined
           })
-        if (availablePlayer.length < 5) {
+        if (availablePlayers.length < 5) {
           this.team = this.teams[0] ? this.teams[0] : []
           Swal.fire({
             title: 'Not enough players!',
-            text: 'You need more players to form a new team!',
+            text: `You need ${5 - availablePlayers.length} more players to form a new team!`,
             icon: 'error',
             confirmButtonText: 'Got it!'
           })
           return
         }
         for (let index = 0; index < teamLength; index++) {
-          const player = this.getRandomItem(availablePlayer)
+          const player = this.getRandomItem(availablePlayers)
           this.team.push(player)
         }
         this.teams.push(this.team)
